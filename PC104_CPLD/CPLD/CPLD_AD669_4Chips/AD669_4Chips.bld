@@ -1,0 +1,33 @@
+Release 9.1.03i ngdbuild J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Program Files\Xilin91\bin\nt\ngdbuild.exe -ise
+F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise
+-intstyle ise -dd _ngo -uc AD669_4Chips.ucf -p xc9500 AD669_4Chips.ngc
+AD669_4Chips.ngd
+
+Reading NGO file
+"F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/AD669_4Chips.ngc" ...
+
+Applying constraints in "AD669_4Chips.ucf" to the design...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 67160 kilobytes
+
+Writing NGD file "AD669_4Chips.ngd" ...
+
+Writing NGDBUILD log file "AD669_4Chips.bld"...

@@ -1,0 +1,235 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_DC$3 <= ((SA(3) AND NOT SA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(0)));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT0: FTCPE port map (CPLD_OUT(0),CPLD_OUT_T(0),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(0) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(0).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(0).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_0.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT1: FTCPE port map (CPLD_OUT(1),CPLD_OUT_T(1),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(1) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(1).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(1).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_1.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT2: FTCPE port map (CPLD_OUT(2),CPLD_OUT_T(2),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(2) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(2).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(2).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_2.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT3: FTCPE port map (CPLD_OUT(3),CPLD_OUT_T(3),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(3) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(3).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(3).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_3.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT4: FTCPE port map (CPLD_OUT(4),CPLD_OUT_T(4),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(4) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(4).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(4).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_4.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT5: FTCPE port map (CPLD_OUT(5),CPLD_OUT_T(5),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(5) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(5).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(5).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_5.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT6: FTCPE port map (CPLD_OUT(6),CPLD_OUT_T(6),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(6) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(6).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(6).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_6.LFBK));
+</td></tr><tr><td>
+FTCPE_CPLD_OUT7: FTCPE port map (CPLD_OUT(7),CPLD_OUT_T(7),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_OUT_T(7) <= ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SD(7).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND NOT CPLD_OUT_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SD(7).PIN AND NOT SA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9) AND SA(1) AND CPLD_OUT_7.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(0) <= SD(0).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(0) <= CPLD_SD_I(0) when CPLD_SD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(0) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(1) <= SD(1).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(1) <= CPLD_SD_I(1) when CPLD_SD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(1) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(2) <= SD(2).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(2) <= CPLD_SD_I(2) when CPLD_SD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(2) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(3) <= SD(3).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(3) <= CPLD_SD_I(3) when CPLD_SD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(3) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(4) <= SD(4).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(4) <= CPLD_SD_I(4) when CPLD_SD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(4) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(5) <= SD(5).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(5) <= CPLD_SD_I(5) when CPLD_SD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(5) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(6) <= SD(6).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(6) <= CPLD_SD_I(6) when CPLD_SD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(6) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(7) <= SD(7).PIN;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(7) <= CPLD_SD_I(7) when CPLD_SD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(7) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(8) <= SD(8);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(8) <= CPLD_SD_I(8) when CPLD_SD_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(8) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(9) <= SD(9);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(9) <= CPLD_SD_I(9) when CPLD_SD_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(9) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(10) <= SD(10);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(10) <= CPLD_SD_I(10) when CPLD_SD_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(10) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(11) <= SD(11);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(11) <= CPLD_SD_I(11) when CPLD_SD_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(11) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(12) <= SD(12);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(12) <= CPLD_SD_I(12) when CPLD_SD_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(12) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(13) <= SD(13);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(13) <= CPLD_SD_I(13) when CPLD_SD_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(13) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(14) <= SD(14);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(14) <= CPLD_SD_I(14) when CPLD_SD_OE(14) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(14) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+CPLD_SD_I(15) <= SD(15);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD(15) <= CPLD_SD_I(15) when CPLD_SD_OE(15) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPLD_SD_OE(15) <= (NOT SA(11) AND NOT SA(10) AND NOT SA(5) AND SA(4) AND NOT SA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(8) AND NOT SA(6) AND SA(9) AND $OpTx$FX_DC$3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+IOCS16 <= NOT ((NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND SA(9)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(0) <= CPLD_IN(0);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(0) <= SD_I(0) when SD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(0) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(1) <= CPLD_IN(1);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(1) <= SD_I(1) when SD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(1) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(2) <= CPLD_IN(2);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(2) <= SD_I(2) when SD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(2) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(3) <= CPLD_IN(3);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(3) <= SD_I(3) when SD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(3) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(4) <= CPLD_IN(4);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(4) <= SD_I(4) when SD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(4) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(5) <= CPLD_IN(5);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(5) <= SD_I(5) when SD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(5) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(6) <= CPLD_IN(6);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(6) <= SD_I(6) when SD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(6) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(7) <= CPLD_IN(7);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(7) <= SD_I(7) when SD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(7) <= (NOT SA(3) AND NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND NOT IOR AND NOT SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(4) AND NOT SA(7) AND NOT SA(8) AND NOT SA(6) AND NOT SA(2) AND SA(9) AND SA(1));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

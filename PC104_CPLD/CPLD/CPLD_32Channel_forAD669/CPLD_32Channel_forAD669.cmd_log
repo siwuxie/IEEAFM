@@ -1,0 +1,72 @@
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -ifn CPLD_32Channel_forAD669.xst -ofn CPLD_32Channel_forAD669.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -dd _ngo -uc "CPLD_32Channel.ucf" -p xc9500 "CPLD_32Channel_forAD669.ngc" CPLD_32Channel_forAD669.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_32Channel_forAD669.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" CPLD_32Channel_forAD669_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise CPLD_32Channel_forAD669 CPLD_32Channel_forAD669.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -intstyle ise -f CPLD_32Channel_forAD669 -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel_forAD669_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_32Channel_forAD669/CPLD_32Channel.ise" -s IEEE1149 -n CPLD_32Channel_forAD669 -i CPLD_32Channel_forAD669

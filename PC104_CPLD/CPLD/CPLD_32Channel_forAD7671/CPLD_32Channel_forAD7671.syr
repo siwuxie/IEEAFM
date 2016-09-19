@@ -1,0 +1,216 @@
+Release 9.1.03i - xst J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.27 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.27 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: CPLD_32Channel_forAD7671.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPLD_32Channel_forAD7671.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPLD_32Channel_forAD7671"
+Output Format                      : NGC
+Target Device                      : XC9500 CPLDs
+
+---- Source Options
+Top Module Name                    : CPLD_32Channel_forAD7671
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : CPLD_32Channel_forAD7671.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "CPLD_32Channel_forAD7671.v" in library work
+Module <CPLD_32Channel_forAD7671> compiled
+No errors in compilation
+Analysis of file <"CPLD_32Channel_forAD7671.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CPLD_32Channel_forAD7671> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CPLD_32Channel_forAD7671>.
+Module <CPLD_32Channel_forAD7671> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CPLD_32Channel_forAD7671>.
+    Related source file is "CPLD_32Channel_forAD7671.v".
+WARNING:Xst:647 - Input <IO_B<7:4>> is never used.
+WARNING:Xst:1780 - Signal <X_OFFSET_WR_Adr> is never used or assigned.
+WARNING:Xst:1780 - Signal <AD669_Trigger> is never used or assigned.
+WARNING:Xst:1780 - Signal <X_GAIN_WR_Adr> is never used or assigned.
+WARNING:Xst:1780 - Signal <Y_OFFSET_WR_Adr> is never used or assigned.
+WARNING:Xst:1780 - Signal <Y_GAIN_WR_Adr> is never used or assigned.
+    Found 3-bit register for signal <OUT_SD_S>.
+    Found 1-bit tristate buffer for signal <SD<15>>.
+    Found 1-bit tristate buffer for signal <SD<14>>.
+    Found 1-bit tristate buffer for signal <SD<13>>.
+    Found 1-bit tristate buffer for signal <SD<12>>.
+    Found 1-bit tristate buffer for signal <SD<11>>.
+    Found 1-bit tristate buffer for signal <SD<10>>.
+    Found 1-bit tristate buffer for signal <SD<9>>.
+    Found 1-bit tristate buffer for signal <SD<8>>.
+    Found 1-bit tristate buffer for signal <SD<7>>.
+    Found 1-bit tristate buffer for signal <SD<6>>.
+    Found 1-bit tristate buffer for signal <SD<5>>.
+    Found 1-bit tristate buffer for signal <SD<4>>.
+    Found 1-bit tristate buffer for signal <SD<3>>.
+    Found 1-bit tristate buffer for signal <SD<2>>.
+    Found 1-bit tristate buffer for signal <SD<1>>.
+    Found 1-bit tristate buffer for signal <SD<0>>.
+    Summary:
+	inferred  20 Tristate(s).
+Unit <CPLD_32Channel_forAD7671> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 3-bit register                                        : 1
+# Tristates                                            : 20
+ 1-bit tristate buffer                                 : 20
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2183 - Unit CPLD_32Channel_forAD7671: the following tristate(s) are NOT replaced by logic (Please refer to Answer Record 20048 for more information): SD<0>_MLTSRCEDGE, SD<1>_MLTSRCEDGE, SD<2>_MLTSRCEDGE, SD<3>_MLTSRCEDGE.
+
+Optimizing unit <CPLD_32Channel_forAD7671> ...
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CPLD_32Channel_forAD7671.ngr
+Top Level Output File Name         : CPLD_32Channel_forAD7671
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : XC9500 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 63
+
+Cell Usage :
+# BELS                             : 214
+#      AND2                        : 36
+#      AND3                        : 2
+#      AND4                        : 12
+#      AND5                        : 1
+#      INV                         : 109
+#      OR2                         : 45
+#      OR3                         : 5
+#      OR4                         : 4
+# FlipFlops/Latches                : 3
+#      FD                          : 3
+# Tri-States                       : 8
+#      BUFE                        : 8
+# IO Buffers                       : 59
+#      IBUF                        : 34
+#      IOBUFE                      : 3
+#      OBUF                        : 9
+#      OBUFE                       : 12
+#      OBUFT                       : 1
+=========================================================================
+CPU : 2.86 / 3.14 s | Elapsed : 3.00 / 3.00 s
+ 
+--> 
+
+Total memory usage is 118564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

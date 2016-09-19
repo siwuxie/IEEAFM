@@ -1,0 +1,296 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+IOCS16_I <= '0';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOCS16 <= IOCS16_I when IOCS16_OE = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOCS16_OE <= '0';
+</td></tr><tr><td>
+FTCPE_IO_A0: FTCPE port map (IO_A(0),IO_A_T(0),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(0) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_0.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A1: FTCPE port map (IO_A(1),IO_A_T(1),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(1) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_1.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A2: FTCPE port map (IO_A(2),IO_A_T(2),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(2) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(2).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(2).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(2).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(2).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_2.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A3: FTCPE port map (IO_A(3),IO_A_T(3),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(3) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(3).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(3).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(3).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(3).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_3.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A4: FTCPE port map (IO_A(4),IO_A_T(4),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(4) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(4).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(4).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(4).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(4).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_4.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A5: FTCPE port map (IO_A(5),IO_A_T(5),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(5) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(5).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(5).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(5).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(5).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_5.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A6: FTCPE port map (IO_A(6),IO_A_T(6),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(6) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(6).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_6.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_A7: FTCPE port map (IO_A(7),IO_A_T(7),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_A_T(7) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	IO_A_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(7).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT IO_A_7.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B0: FTCPE port map (IO_B(0),IO_B_T(0),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(0) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(8) AND IO_B_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(8) AND NOT IO_B_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(8) AND IO_B_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(8) AND NOT IO_B_0.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B1: FTCPE port map (IO_B(1),IO_B_T(1),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(1) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(9) AND IO_B_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(9) AND NOT IO_B_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(9) AND IO_B_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(9) AND NOT IO_B_1.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B2: FTCPE port map (IO_B(2),IO_B_T(2),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(2) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(10) AND IO_B_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(10) AND NOT IO_B_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(10) AND IO_B_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(10) AND NOT IO_B_2.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B3: FTCPE port map (IO_B(3),IO_B_T(3),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(3) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(11) AND IO_B_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(11) AND NOT IO_B_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(11) AND IO_B_3.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(11) AND NOT IO_B_3.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B4: FTCPE port map (IO_B(4),IO_B_T(4),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(4) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(12) AND IO_B_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(12) AND NOT IO_B_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(12) AND IO_B_4.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(12) AND NOT IO_B_4.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B5: FTCPE port map (IO_B(5),IO_B_T(5),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(5) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(13) AND IO_B_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(13) AND NOT IO_B_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(13) AND IO_B_5.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(13) AND NOT IO_B_5.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B6: FTCPE port map (IO_B(6),IO_B_T(6),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(6) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(14) AND IO_B_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(14) AND NOT IO_B_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(14) AND IO_B_6.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(14) AND NOT IO_B_6.LFBK));
+</td></tr><tr><td>
+FTCPE_IO_B7: FTCPE port map (IO_B(7),IO_B_T(7),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IO_B_T(7) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(15) AND IO_B_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(15) AND NOT IO_B_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(15) AND IO_B_7.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(15) AND NOT IO_B_7.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(8) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(9) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(10) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(11) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(12) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(13) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(14) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(15) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(0) <= NOT IN_SD(8);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(0) <= SD_I(0) when SD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(0) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(1) <= NOT IN_SD(9);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(1) <= SD_I(1) when SD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(1) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(2) <= NOT IN_SD(10);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(2) <= SD_I(2) when SD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(2) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(3) <= NOT IN_SD(11);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(3) <= SD_I(3) when SD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(3) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(4) <= NOT IN_SD(12);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(4) <= SD_I(4) when SD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(4) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(5) <= NOT IN_SD(13);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(5) <= SD_I(5) when SD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(5) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(6) <= NOT IN_SD(14);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(6) <= SD_I(6) when SD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(6) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(7) <= NOT IN_SD(15);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(7) <= SD_I(7) when SD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(7) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

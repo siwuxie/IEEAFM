@@ -1,0 +1,793 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version J.33                              Xilinx Inc.
+                                  Fitter Report
+Design Name: CPLD_32Channel_forAD669             Date: 11-28-2013,  3:17PM
+Device Used: XC95108-7-PC84
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+33 /108 ( 31%) 104 /540  ( 19%) 104/216 ( 48%)   16 /108 ( 15%) 63 /69  ( 91%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Signals     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used        Used/Tot    Used/Tot    
+FB1           9/18       30/36       30          45/90       9/12
+FB2           2/18       13/36       13           2/90       2/12
+FB3           8/18       26/36       26          35/90       8/12
+FB4          11/18       19/36       19          16/90      11/11*
+FB5           0/18        0/36        0           0/90       0/11
+FB6           3/18       16/36       16           6/90       3/11
+             -----       -----                   -----       -----     
+             33/108     104/216                 104/540     33/69 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   30          30    |  I/O              :    62      63
+Output        :   25          25    |  GCK/IO           :     0       3
+Bidirectional :    8           8    |  GTS/IO           :     0       2
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     63          63
+
+** Power Data **
+
+There are 33 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 33 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+IO_B<7>             5     14    FB1_2   1    I/O     O       STD  FAST RESET
+IO_B<6>             5     14    FB1_3   2    I/O     O       STD  FAST RESET
+IO_B<5>             5     14    FB1_5   3    I/O     O       STD  FAST RESET
+IO_B<4>             5     14    FB1_6   4    I/O     O       STD  FAST RESET
+IO_B<3>             5     14    FB1_8   5    I/O     O       STD  FAST RESET
+IO_B<2>             5     14    FB1_9   6    I/O     O       STD  FAST RESET
+IO_B<1>             5     14    FB1_11  7    I/O     O       STD  FAST RESET
+IO_B<0>             5     14    FB1_15  11   I/O     O       STD  FAST RESET
+IO_A<7>             5     14    FB1_17  13   I/O     O       STD  FAST RESET
+OUT_SD<9>           1     13    FB2_2   71   I/O     O       STD  FAST 
+OUT_SD<8>           1     13    FB2_3   72   I/O     O       STD  FAST 
+IO_A<6>             5     14    FB3_2   14   I/O     O       STD  FAST RESET
+IO_A<5>             5     14    FB3_3   15   I/O     O       STD  FAST RESET
+IO_A<4>             5     14    FB3_5   17   I/O     O       STD  FAST RESET
+IO_A<3>             5     14    FB3_6   18   I/O     O       STD  FAST RESET
+IO_A<2>             5     14    FB3_8   19   I/O     O       STD  FAST RESET
+IO_A<1>             5     14    FB3_9   20   I/O     O       STD  FAST RESET
+IO_A<0>             5     14    FB3_11  21   I/O     O       STD  FAST RESET
+IOCS16              0     0     FB3_16  26   I/O     O       STD  FAST 
+SD<4>               2     14    FB4_2   57   I/O     I/O     STD  FAST 
+SD<3>               2     14    FB4_3   58   I/O     I/O     STD  FAST 
+SD<2>               2     14    FB4_5   61   I/O     I/O     STD  FAST 
+SD<1>               2     14    FB4_6   62   I/O     I/O     STD  FAST 
+SD<0>               2     14    FB4_8   63   I/O     I/O     STD  FAST 
+OUT_SD<15>          1     13    FB4_9   65   I/O     O       STD  FAST 
+OUT_SD<14>          1     13    FB4_11  66   I/O     O       STD  FAST 
+OUT_SD<13>          1     13    FB4_12  67   I/O     O       STD  FAST 
+OUT_SD<12>          1     13    FB4_14  68   I/O     O       STD  FAST 
+OUT_SD<11>          1     13    FB4_15  69   I/O     O       STD  FAST 
+OUT_SD<10>          1     13    FB4_17  70   I/O     O       STD  FAST 
+SD<7>               2     14    FB6_14  54   I/O     I/O     STD  FAST 
+SD<6>               2     14    FB6_15  55   I/O     I/O     STD  FAST 
+SD<5>               2     14    FB6_17  56   I/O     I/O     STD  FAST 
+
+** 30 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+IN_SD<15>           FB2_5   74   GSR/I/O I
+IN_SD<14>           FB2_6   75   I/O     I
+IN_SD<13>           FB2_11  79   I/O     I
+IN_SD<12>           FB2_12  80   I/O     I
+IN_SD<11>           FB2_14  81   I/O     I
+IN_SD<10>           FB2_15  82   I/O     I
+IN_SD<9>            FB2_16  83   I/O     I
+IN_SD<8>            FB2_17  84   I/O     I
+IOW                 FB3_12  23   I/O     I
+IOR                 FB3_14  24   I/O     I
+SA<11>              FB3_17  31   I/O     I
+SA<10>              FB5_2   32   I/O     I
+SA<9>               FB5_3   33   I/O     I
+SA<8>               FB5_5   34   I/O     I
+SA<7>               FB5_6   35   I/O     I
+SA<6>               FB5_8   36   I/O     I
+SA<5>               FB5_9   37   I/O     I
+SA<4>               FB5_11  39   I/O     I
+SA<3>               FB5_12  40   I/O     I
+SA<2>               FB5_14  41   I/O     I
+SA<1>               FB5_15  43   I/O     I
+SA<0>               FB5_17  44   I/O     I
+SD<15>              FB6_2   45   I/O     I
+SD<14>              FB6_3   46   I/O     I
+SD<13>              FB6_5   47   I/O     I
+SD<12>              FB6_6   48   I/O     I
+SD<11>              FB6_8   50   I/O     I
+SD<10>              FB6_9   51   I/O     I
+SD<9>               FB6_11  52   I/O     I
+SD<8>               FB6_12  53   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@)         - Signal used as input (wire-AND input) to the macrocell logic.
+               The number of Signals Used may exceed the number of FB Inputs
+               Used due to wire-ANDing in the switch matrix.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               30/6
+Number of signals used by logic mapping into function block:  30
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1         (b)     
+IO_B<7>               5       0     0   0     FB1_2   1     I/O     O
+IO_B<6>               5       0     0   0     FB1_3   2     I/O     O
+(unused)              0       0     0   5     FB1_4         (b)     
+IO_B<5>               5       0     0   0     FB1_5   3     I/O     O
+IO_B<4>               5       0     0   0     FB1_6   4     I/O     O
+(unused)              0       0     0   5     FB1_7         (b)     
+IO_B<3>               5       0     0   0     FB1_8   5     I/O     O
+IO_B<2>               5       0     0   0     FB1_9   6     I/O     O
+(unused)              0       0     0   5     FB1_10        (b)     
+IO_B<1>               5       0     0   0     FB1_11  7     I/O     O
+(unused)              0       0     0   5     FB1_12  9     GCK/I/O 
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  10    GCK/I/O 
+IO_B<0>               5       0     0   0     FB1_15  11    I/O     O
+(unused)              0       0     0   5     FB1_16  12    GCK/I/O 
+IO_A<7>               5       0     0   0     FB1_17  13    I/O     O
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: IOW               11: SD<7>.PIN         21: SA<8> 
+  2: IO_A_7.LFBK       12: SA<0>             22: SA<9> 
+  3: IO_B_0.LFBK       13: SA<10>            23: SD<10> 
+  4: IO_B_1.LFBK       14: SA<11>            24: SD<11> 
+  5: IO_B_2.LFBK       15: SA<2>             25: SD<12> 
+  6: IO_B_3.LFBK       16: SA<3>             26: SD<13> 
+  7: IO_B_4.LFBK       17: SA<4>             27: SD<14> 
+  8: IO_B_5.LFBK       18: SA<5>             28: SD<15> 
+  9: IO_B_6.LFBK       19: SA<6>             29: SD<8> 
+ 10: IO_B_7.LFBK       20: SA<7>             30: SD<9> 
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+IO_B<7>              X........X.XXXXXXXXXXX.....X............ 14      14
+IO_B<6>              X.......X..XXXXXXXXXXX....X............. 14      14
+IO_B<5>              X......X...XXXXXXXXXXX...X.............. 14      14
+IO_B<4>              X.....X....XXXXXXXXXXX..X............... 14      14
+IO_B<3>              X....X.....XXXXXXXXXXX.X................ 14      14
+IO_B<2>              X...X......XXXXXXXXXXXX................. 14      14
+IO_B<1>              X..X.......XXXXXXXXXXX.......X.......... 14      14
+IO_B<0>              X.X........XXXXXXXXXXX......X........... 14      14
+IO_A<7>              XX........XXXXXXXXXXXX.................. 14      14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               13/23
+Number of signals used by logic mapping into function block:  13
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1         (b)     
+OUT_SD<9>             1       0     0   4     FB2_2   71    I/O     O
+OUT_SD<8>             1       0     0   4     FB2_3   72    I/O     O
+(unused)              0       0     0   5     FB2_4         (b)     
+(unused)              0       0     0   5     FB2_5   74    GSR/I/O I
+(unused)              0       0     0   5     FB2_6   75    I/O     I
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   76    GTS/I/O 
+(unused)              0       0     0   5     FB2_9   77    GTS/I/O 
+(unused)              0       0     0   5     FB2_10        (b)     
+(unused)              0       0     0   5     FB2_11  79    I/O     I
+(unused)              0       0     0   5     FB2_12  80    I/O     I
+(unused)              0       0     0   5     FB2_13        (b)     
+(unused)              0       0     0   5     FB2_14  81    I/O     I
+(unused)              0       0     0   5     FB2_15  82    I/O     I
+(unused)              0       0     0   5     FB2_16  83    I/O     I
+(unused)              0       0     0   5     FB2_17  84    I/O     I
+(unused)              0       0     0   5     FB2_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: IOW                6: SA<2>             10: SA<6> 
+  2: SA<0>              7: SA<3>             11: SA<7> 
+  3: SA<10>             8: SA<4>             12: SA<8> 
+  4: SA<11>             9: SA<5>             13: SA<9> 
+  5: SA<1>            
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+OUT_SD<9>            XXXXXXXXXXXXX........................... 13      13
+OUT_SD<8>            XXXXXXXXXXXXX........................... 13      13
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               26/10
+Number of signals used by logic mapping into function block:  26
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1         (b)     
+IO_A<6>               5       0     0   0     FB3_2   14    I/O     O
+IO_A<5>               5       0     0   0     FB3_3   15    I/O     O
+(unused)              0       0     0   5     FB3_4         (b)     
+IO_A<4>               5       0     0   0     FB3_5   17    I/O     O
+IO_A<3>               5       0     0   0     FB3_6   18    I/O     O
+(unused)              0       0     0   5     FB3_7         (b)     
+IO_A<2>               5       0     0   0     FB3_8   19    I/O     O
+IO_A<1>               5       0     0   0     FB3_9   20    I/O     O
+(unused)              0       0     0   5     FB3_10        (b)     
+IO_A<0>               5       0     0   0     FB3_11  21    I/O     O
+(unused)              0       0     0   5     FB3_12  23    I/O     I
+(unused)              0       0     0   5     FB3_13        (b)     
+(unused)              0       0     0   5     FB3_14  24    I/O     I
+(unused)              0       0     0   5     FB3_15  25    I/O     
+IOCS16                0       0     0   5     FB3_16  26    I/O     O
+(unused)              0       0     0   5     FB3_17  31    I/O     I
+(unused)              0       0     0   5     FB3_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: IOW               10: SD<1>.PIN         19: SA<2> 
+  2: IO_A_0.LFBK       11: SD<2>.PIN         20: SA<3> 
+  3: IO_A_1.LFBK       12: SD<3>.PIN         21: SA<4> 
+  4: IO_A_2.LFBK       13: SD<4>.PIN         22: SA<5> 
+  5: IO_A_3.LFBK       14: SD<5>.PIN         23: SA<6> 
+  6: IO_A_4.LFBK       15: SD<6>.PIN         24: SA<7> 
+  7: IO_A_5.LFBK       16: SA<0>             25: SA<8> 
+  8: IO_A_6.LFBK       17: SA<10>            26: SA<9> 
+  9: SD<0>.PIN         18: SA<11>           
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+IO_A<6>              X......X......XXXXXXXXXXXX.............. 14      14
+IO_A<5>              X.....X......X.XXXXXXXXXXX.............. 14      14
+IO_A<4>              X....X......X..XXXXXXXXXXX.............. 14      14
+IO_A<3>              X...X......X...XXXXXXXXXXX.............. 14      14
+IO_A<2>              X..X......X....XXXXXXXXXXX.............. 14      14
+IO_A<1>              X.X......X.....XXXXXXXXXXX.............. 14      14
+IO_A<0>              XX......X......XXXXXXXXXXX.............. 14      14
+IOCS16               ........................................ 0       0
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               19/17
+Number of signals used by logic mapping into function block:  19
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB4_1         (b)     
+SD<4>                 2       0     0   3     FB4_2   57    I/O     I/O
+SD<3>                 2       0     0   3     FB4_3   58    I/O     I/O
+(unused)              0       0     0   5     FB4_4         (b)     
+SD<2>                 2       0     0   3     FB4_5   61    I/O     I/O
+SD<1>                 2       0     0   3     FB4_6   62    I/O     I/O
+(unused)              0       0     0   5     FB4_7         (b)     
+SD<0>                 2       0     0   3     FB4_8   63    I/O     I/O
+OUT_SD<15>            1       0     0   4     FB4_9   65    I/O     O
+(unused)              0       0     0   5     FB4_10        (b)     
+OUT_SD<14>            1       0     0   4     FB4_11  66    I/O     O
+OUT_SD<13>            1       0     0   4     FB4_12  67    I/O     O
+(unused)              0       0     0   5     FB4_13        (b)     
+OUT_SD<12>            1       0     0   4     FB4_14  68    I/O     O
+OUT_SD<11>            1       0     0   4     FB4_15  69    I/O     O
+(unused)              0       0     0   5     FB4_16        (b)     
+OUT_SD<10>            1       0     0   4     FB4_17  70    I/O     O
+(unused)              0       0     0   5     FB4_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: IN_SD<10>          8: SA<0>             14: SA<4> 
+  2: IN_SD<11>          9: SA<10>            15: SA<5> 
+  3: IN_SD<12>         10: SA<11>            16: SA<6> 
+  4: IN_SD<8>          11: SA<1>             17: SA<7> 
+  5: IN_SD<9>          12: SA<2>             18: SA<8> 
+  6: IOR               13: SA<3>             19: SA<9> 
+  7: IOW              
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+SD<4>                ..X..X.XXXXXXXXXXXX..................... 14      14
+SD<3>                .X...X.XXXXXXXXXXXX..................... 14      14
+SD<2>                X....X.XXXXXXXXXXXX..................... 14      14
+SD<1>                ....XX.XXXXXXXXXXXX..................... 14      14
+SD<0>                ...X.X.XXXXXXXXXXXX..................... 14      14
+OUT_SD<15>           ......XXXXXXXXXXXXX..................... 13      13
+OUT_SD<14>           ......XXXXXXXXXXXXX..................... 13      13
+OUT_SD<13>           ......XXXXXXXXXXXXX..................... 13      13
+OUT_SD<12>           ......XXXXXXXXXXXXX..................... 13      13
+OUT_SD<11>           ......XXXXXXXXXXXXX..................... 13      13
+OUT_SD<10>           ......XXXXXXXXXXXXX..................... 13      13
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               0/36
+Number of signals used by logic mapping into function block:  0
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB5_1         (b)     
+(unused)              0       0     0   5     FB5_2   32    I/O     I
+(unused)              0       0     0   5     FB5_3   33    I/O     I
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   34    I/O     I
+(unused)              0       0     0   5     FB5_6   35    I/O     I
+(unused)              0       0     0   5     FB5_7         (b)     
+(unused)              0       0     0   5     FB5_8   36    I/O     I
+(unused)              0       0     0   5     FB5_9   37    I/O     I
+(unused)              0       0     0   5     FB5_10        (b)     
+(unused)              0       0     0   5     FB5_11  39    I/O     I
+(unused)              0       0     0   5     FB5_12  40    I/O     I
+(unused)              0       0     0   5     FB5_13        (b)     
+(unused)              0       0     0   5     FB5_14  41    I/O     I
+(unused)              0       0     0   5     FB5_15  43    I/O     I
+(unused)              0       0     0   5     FB5_16        (b)     
+(unused)              0       0     0   5     FB5_17  44    I/O     I
+(unused)              0       0     0   5     FB5_18        (b)     
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB6_1         (b)     
+(unused)              0       0     0   5     FB6_2   45    I/O     I
+(unused)              0       0     0   5     FB6_3   46    I/O     I
+(unused)              0       0     0   5     FB6_4         (b)     
+(unused)              0       0     0   5     FB6_5   47    I/O     I
+(unused)              0       0     0   5     FB6_6   48    I/O     I
+(unused)              0       0     0   5     FB6_7         (b)     
+(unused)              0       0     0   5     FB6_8   50    I/O     I
+(unused)              0       0     0   5     FB6_9   51    I/O     I
+(unused)              0       0     0   5     FB6_10        (b)     
+(unused)              0       0     0   5     FB6_11  52    I/O     I
+(unused)              0       0     0   5     FB6_12  53    I/O     I
+(unused)              0       0     0   5     FB6_13        (b)     
+SD<7>                 2       0     0   3     FB6_14  54    I/O     I/O
+SD<6>                 2       0     0   3     FB6_15  55    I/O     I/O
+(unused)              0       0     0   5     FB6_16        (b)     
+SD<5>                 2       0     0   3     FB6_17  56    I/O     I/O
+(unused)              0       0     0   5     FB6_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: IN_SD<13>          7: SA<11>            12: SA<5> 
+  2: IN_SD<14>          8: SA<1>             13: SA<6> 
+  3: IN_SD<15>          9: SA<2>             14: SA<7> 
+  4: IOR               10: SA<3>             15: SA<8> 
+  5: SA<0>             11: SA<4>             16: SA<9> 
+  6: SA<10>           
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+SD<7>                ..XXXXXXXXXXXXXX........................ 14      14
+SD<6>                .X.XXXXXXXXXXXXX........................ 14      14
+SD<5>                X..XXXXXXXXXXXXX........................ 14      14
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+IOCS16_I <= '0';
+IOCS16 <= IOCS16_I when IOCS16_OE = '1' else 'Z';
+IOCS16_OE <= '0';
+
+FTCPE_IO_A0: FTCPE port map (IO_A(0),IO_A_T(0),NOT IOW,'0','0');
+IO_A_T(0) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(0).PIN AND 
+	IO_A_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(0).PIN AND 
+	NOT IO_A_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(0).PIN AND 
+	IO_A_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(0).PIN AND 
+	NOT IO_A_0.LFBK));
+
+FTCPE_IO_A1: FTCPE port map (IO_A(1),IO_A_T(1),NOT IOW,'0','0');
+IO_A_T(1) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(1).PIN AND 
+	IO_A_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(1).PIN AND 
+	NOT IO_A_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(1).PIN AND 
+	IO_A_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(1).PIN AND 
+	NOT IO_A_1.LFBK));
+
+FTCPE_IO_A2: FTCPE port map (IO_A(2),IO_A_T(2),NOT IOW,'0','0');
+IO_A_T(2) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(2).PIN AND 
+	IO_A_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(2).PIN AND 
+	NOT IO_A_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(2).PIN AND 
+	IO_A_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(2).PIN AND 
+	NOT IO_A_2.LFBK));
+
+FTCPE_IO_A3: FTCPE port map (IO_A(3),IO_A_T(3),NOT IOW,'0','0');
+IO_A_T(3) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(3).PIN AND 
+	IO_A_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(3).PIN AND 
+	NOT IO_A_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(3).PIN AND 
+	IO_A_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(3).PIN AND 
+	NOT IO_A_3.LFBK));
+
+FTCPE_IO_A4: FTCPE port map (IO_A(4),IO_A_T(4),NOT IOW,'0','0');
+IO_A_T(4) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(4).PIN AND 
+	IO_A_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(4).PIN AND 
+	NOT IO_A_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(4).PIN AND 
+	IO_A_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(4).PIN AND 
+	NOT IO_A_4.LFBK));
+
+FTCPE_IO_A5: FTCPE port map (IO_A(5),IO_A_T(5),NOT IOW,'0','0');
+IO_A_T(5) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(5).PIN AND 
+	IO_A_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(5).PIN AND 
+	NOT IO_A_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(5).PIN AND 
+	IO_A_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(5).PIN AND 
+	NOT IO_A_5.LFBK));
+
+FTCPE_IO_A6: FTCPE port map (IO_A(6),IO_A_T(6),NOT IOW,'0','0');
+IO_A_T(6) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(6).PIN AND 
+	IO_A_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(6).PIN AND 
+	NOT IO_A_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(6).PIN AND 
+	IO_A_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(6).PIN AND 
+	NOT IO_A_6.LFBK));
+
+FTCPE_IO_A7: FTCPE port map (IO_A(7),IO_A_T(7),NOT IOW,'0','0');
+IO_A_T(7) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(7).PIN AND 
+	IO_A_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(7).PIN AND 
+	NOT IO_A_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(7).PIN AND 
+	IO_A_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(7).PIN AND 
+	NOT IO_A_7.LFBK));
+
+FTCPE_IO_B0: FTCPE port map (IO_B(0),IO_B_T(0),NOT IOW,'0','0');
+IO_B_T(0) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(8) AND IO_B_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(8) AND NOT IO_B_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(8) AND IO_B_0.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(8) AND NOT IO_B_0.LFBK));
+
+FTCPE_IO_B1: FTCPE port map (IO_B(1),IO_B_T(1),NOT IOW,'0','0');
+IO_B_T(1) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(9) AND IO_B_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(9) AND NOT IO_B_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(9) AND IO_B_1.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(9) AND NOT IO_B_1.LFBK));
+
+FTCPE_IO_B2: FTCPE port map (IO_B(2),IO_B_T(2),NOT IOW,'0','0');
+IO_B_T(2) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(10) AND IO_B_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(10) AND NOT IO_B_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(10) AND IO_B_2.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(10) AND NOT IO_B_2.LFBK));
+
+FTCPE_IO_B3: FTCPE port map (IO_B(3),IO_B_T(3),NOT IOW,'0','0');
+IO_B_T(3) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(11) AND IO_B_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(11) AND NOT IO_B_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(11) AND IO_B_3.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(11) AND NOT IO_B_3.LFBK));
+
+FTCPE_IO_B4: FTCPE port map (IO_B(4),IO_B_T(4),NOT IOW,'0','0');
+IO_B_T(4) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(12) AND IO_B_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(12) AND NOT IO_B_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(12) AND IO_B_4.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(12) AND NOT IO_B_4.LFBK));
+
+FTCPE_IO_B5: FTCPE port map (IO_B(5),IO_B_T(5),NOT IOW,'0','0');
+IO_B_T(5) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(13) AND IO_B_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(13) AND NOT IO_B_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(13) AND IO_B_5.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(13) AND NOT IO_B_5.LFBK));
+
+FTCPE_IO_B6: FTCPE port map (IO_B(6),IO_B_T(6),NOT IOW,'0','0');
+IO_B_T(6) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(14) AND IO_B_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(14) AND NOT IO_B_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(14) AND IO_B_6.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(14) AND NOT IO_B_6.LFBK));
+
+FTCPE_IO_B7: FTCPE port map (IO_B(7),IO_B_T(7),NOT IOW,'0','0');
+IO_B_T(7) <= ((NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND SD(15) AND IO_B_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(9) AND NOT SD(15) AND NOT IO_B_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND SD(15) AND IO_B_7.LFBK)
+	OR (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(0) AND SA(9) AND NOT SD(15) AND NOT IO_B_7.LFBK));
+
+
+OUT_SD(8) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+
+
+OUT_SD(9) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+
+
+OUT_SD(10) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+
+
+OUT_SD(11) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+
+
+OUT_SD(12) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+
+
+OUT_SD(13) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(0) AND SA(9) AND NOT SA(1) AND NOT IOW);
+
+
+OUT_SD(14) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+
+
+OUT_SD(15) <= (NOT SA(7) AND NOT SA(5) AND SA(4) AND SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND SA(0) AND SA(9) AND SA(1) AND NOT IOW);
+
+
+SD_I(0) <= NOT IN_SD(8);
+SD(0) <= SD_I(0) when SD_OE(0) = '1' else 'Z';
+SD_OE(0) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(1) <= NOT IN_SD(9);
+SD(1) <= SD_I(1) when SD_OE(1) = '1' else 'Z';
+SD_OE(1) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(2) <= NOT IN_SD(10);
+SD(2) <= SD_I(2) when SD_OE(2) = '1' else 'Z';
+SD_OE(2) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(3) <= NOT IN_SD(11);
+SD(3) <= SD_I(3) when SD_OE(3) = '1' else 'Z';
+SD_OE(3) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(4) <= NOT IN_SD(12);
+SD(4) <= SD_I(4) when SD_OE(4) = '1' else 'Z';
+SD_OE(4) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(5) <= NOT IN_SD(13);
+SD(5) <= SD_I(5) when SD_OE(5) = '1' else 'Z';
+SD_OE(5) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(6) <= NOT IN_SD(14);
+SD(6) <= SD_I(6) when SD_OE(6) = '1' else 'Z';
+SD_OE(6) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+
+SD_I(7) <= NOT IN_SD(15);
+SD(7) <= SD_I(7) when SD_OE(7) = '1' else 'Z';
+SD_OE(7) <= (NOT SA(7) AND NOT SA(5) AND NOT SA(4) AND NOT SA(3) AND NOT SA(8) AND NOT SA(6) AND 
+	NOT SA(11) AND NOT SA(10) AND NOT SA(2) AND NOT SA(0) AND SA(9) AND SA(1) AND NOT IOR);
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE); 
+ FTCPE (Q,D,C,CLR,PRE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC95108-7-PC84
+
+
+   --------------------------------------------------------------  
+  /11 10 9  8  7  6  5  4  3  2  1  84 83 82 81 80 79 78 77 76 75 \
+ | 12                                                          74 | 
+ | 13                                                          73 | 
+ | 14                                                          72 | 
+ | 15                                                          71 | 
+ | 16                                                          70 | 
+ | 17                                                          69 | 
+ | 18                                                          68 | 
+ | 19                                                          67 | 
+ | 20                                                          66 | 
+ | 21                       XC95108-7-PC84                     65 | 
+ | 22                                                          64 | 
+ | 23                                                          63 | 
+ | 24                                                          62 | 
+ | 25                                                          61 | 
+ | 26                                                          60 | 
+ | 27                                                          59 | 
+ | 28                                                          58 | 
+ | 29                                                          57 | 
+ | 30                                                          56 | 
+ | 31                                                          55 | 
+ | 32                                                          54 | 
+ \ 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 /
+   --------------------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 IO_B<7>                          43 SA<1>                         
+  2 IO_B<6>                          44 SA<0>                         
+  3 IO_B<5>                          45 SD<15>                        
+  4 IO_B<4>                          46 SD<14>                        
+  5 IO_B<3>                          47 SD<13>                        
+  6 IO_B<2>                          48 SD<12>                        
+  7 IO_B<1>                          49 GND                           
+  8 GND                              50 SD<11>                        
+  9 TIE                              51 SD<10>                        
+ 10 TIE                              52 SD<9>                         
+ 11 IO_B<0>                          53 SD<8>                         
+ 12 TIE                              54 SD<7>                         
+ 13 IO_A<7>                          55 SD<6>                         
+ 14 IO_A<6>                          56 SD<5>                         
+ 15 IO_A<5>                          57 SD<4>                         
+ 16 GND                              58 SD<3>                         
+ 17 IO_A<4>                          59 TDO                           
+ 18 IO_A<3>                          60 GND                           
+ 19 IO_A<2>                          61 SD<2>                         
+ 20 IO_A<1>                          62 SD<1>                         
+ 21 IO_A<0>                          63 SD<0>                         
+ 22 VCC                              64 VCC                           
+ 23 IOW                              65 OUT_SD<15>                    
+ 24 IOR                              66 OUT_SD<14>                    
+ 25 TIE                              67 OUT_SD<13>                    
+ 26 IOCS16                           68 OUT_SD<12>                    
+ 27 GND                              69 OUT_SD<11>                    
+ 28 TDI                              70 OUT_SD<10>                    
+ 29 TMS                              71 OUT_SD<9>                     
+ 30 TCK                              72 OUT_SD<8>                     
+ 31 SA<11>                           73 VCC                           
+ 32 SA<10>                           74 IN_SD<15>                     
+ 33 SA<9>                            75 IN_SD<14>                     
+ 34 SA<8>                            76 TIE                           
+ 35 SA<7>                            77 TIE                           
+ 36 SA<6>                            78 VCC                           
+ 37 SA<5>                            79 IN_SD<13>                     
+ 38 VCC                              80 IN_SD<12>                     
+ 39 SA<4>                            81 IN_SD<11>                     
+ 40 SA<3>                            82 IN_SD<10>                     
+ 41 SA<2>                            83 IN_SD<9>                      
+ 42 GND                              84 IN_SD<8>                      
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc95108-7-PC84
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+FASTConnect/UIM optimzation                 : ON
+Local Feedback                              : ON
+Pin Feedback                                : ON
+Input Limit                                 : 36
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CPLD_AD7671_4Chips.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CPLD_AD7671_4Chips.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CPLD_AD7671_4Chips.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="CPLD_AD7671_4Chips.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="CPLD_AD7671_4Chips.jed"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CPLD_AD7671_4Chips.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="CPLD_AD7671_4Chips.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="CPLD_AD7671_4Chips.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="CPLD_AD7671_4Chips.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="CPLD_AD7671_4Chips.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="CPLD_AD7671_4Chips.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="CPLD_AD7671_4Chips.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="CPLD_AD7671_4Chips.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPLD_AD7671_4Chips.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPLD_AD7671_4Chips.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="CPLD_AD7671_4Chips.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="CPLD_AD7671_4Chips.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPLD_AD7671_4Chips.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPLD_AD7671_4Chips.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="CPLD_AD7671_4Chips.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPLD_AD7671_4Chips.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="CPLD_AD7671_4Chips.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPLD_AD7671_4Chips_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="CPLD_AD7671_4Chips_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPLD_AD7671_4Chips_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="CPLD_AD7671_4Chips_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPLD_AD7671_4Chips_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPLD_AD7671_4Chips_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="_impact.cmd"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="_impact.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1387789557" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1387789556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789557" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-279448828822556741" xil_pn:start_ts="1387789557">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789565" xil_pn:in_ck="3497306726806253162" xil_pn:name="TRANEXT_xstsynthesize_CPLD" xil_pn:prop_ck="-9156335407908012524" xil_pn:start_ts="1387789557">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.lso"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.ngc"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.ngr"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.prj"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.stx"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.syr"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.xst"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789566" xil_pn:in_ck="8537746307842062802" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3384517971007066760" xil_pn:start_ts="1387789565">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789571" xil_pn:in_ck="-6243024919650097314" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="-7408430926068746845" xil_pn:start_ts="1387789566">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.bld"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.ngd"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789583" xil_pn:in_ck="8537746307842055309" xil_pn:name="TRANEXT_vm6File_xc9500" xil_pn:prop_ck="4049611804689186936" xil_pn:start_ts="1387789571">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.gyd"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.mfd"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.nga"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.pad"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.pnx"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.rpt"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.tim"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.tspec"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.vm6"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.xml"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips_build.xml"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips_html"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789586" xil_pn:in_ck="8537746307842064173" xil_pn:name="TRANEXT_crtProg_xc9500" xil_pn:prop_ck="-9204593535224376705" xil_pn:start_ts="1387789583">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CPLD_AD7671_4Chips.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789586" xil_pn:in_ck="8537746307842050887" xil_pn:name="TRAN_impactProgrammingTool_CPLD" xil_pn:prop_ck="3549877751956686432" xil_pn:start_ts="1387789586">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <outfile xil_pn:name="_impact.cmd"/>
+      <outfile xil_pn:name="_impact.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1387789583" xil_pn:in_ck="8537746307842064173" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1387789581">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

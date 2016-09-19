@@ -1,0 +1,335 @@
+MDF Database:  version 1.0
+MDF_INFO | CPLD_32Channel_forSignalBoard | XC95108-7-PC84
+MACROCELL | 2 | 10 | IO_A_0
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<0>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_0.LFBK
+INPUTMC | 1 | 2 | 10
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 118 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<0>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<0> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_0.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<0> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_0.LFBK;
+   IO_A<0>.CLK = !IOW;
+
+MACROCELL | 2 | 8 | IO_A_1
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 8
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<1>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_1.LFBK
+INPUTMC | 1 | 2 | 8
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 117 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<1>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<1> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_1.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<1> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_1.LFBK;
+   IO_A<1>.CLK = !IOW;
+
+MACROCELL | 2 | 7 | IO_A_2
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 7
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<2>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_2.LFBK
+INPUTMC | 1 | 2 | 7
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 116 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<2>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<2> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_2.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<2> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_2.LFBK;
+   IO_A<2>.CLK = !IOW;
+
+MACROCELL | 2 | 5 | IO_A_3
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 5
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<3>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_3.LFBK
+INPUTMC | 1 | 2 | 5
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 113 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<3>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<3> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_3.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<3> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_3.LFBK;
+   IO_A<3>.CLK = !IOW;
+
+MACROCELL | 2 | 4 | IO_A_4
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<4>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_4.LFBK
+INPUTMC | 1 | 2 | 4
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 112 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<4>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<4> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_4.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<4> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_4.LFBK;
+   IO_A<4>.CLK = !IOW;
+
+MACROCELL | 2 | 2 | IO_A_5
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 2
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<5>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_5.LFBK
+INPUTMC | 1 | 2 | 2
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 107 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<5>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<5> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_5.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<5> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_5.LFBK;
+   IO_A<5>.CLK = !IOW;
+
+MACROCELL | 2 | 1 | IO_A_6
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<6>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_6.LFBK
+INPUTMC | 1 | 2 | 1
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 106 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<6>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<6> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_6.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<6> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_6.LFBK;
+   IO_A<6>.CLK = !IOW;
+
+MACROCELL | 0 | 16 | IO_A_7
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 16
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<7>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_A_7.LFBK
+INPUTMC | 1 | 0 | 16
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 104 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_A<7>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<7> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & IO_A_7.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<7> & SA<6> & !SA<1> & SA<9> & 
+	SA<0> & !IO_A_7.LFBK;
+   IO_A<7>.CLK = !IOW;
+
+MACROCELL | 0 | 14 | IO_B_0
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<0>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_0.LFBK
+INPUTMC | 1 | 0 | 14
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 118 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<0>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<0> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_0.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<0> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_0.LFBK;
+   IO_B<0>.CLK = !IOW;
+
+MACROCELL | 0 | 10 | IO_B_1
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 10
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<1>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_1.LFBK
+INPUTMC | 1 | 0 | 10
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 117 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<1>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<1> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_1.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<1> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_1.LFBK;
+   IO_B<1>.CLK = !IOW;
+
+MACROCELL | 0 | 8 | IO_B_2
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<2>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_2.LFBK
+INPUTMC | 1 | 0 | 8
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 116 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<2>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<2> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_2.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<2> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_2.LFBK;
+   IO_B<2>.CLK = !IOW;
+
+MACROCELL | 0 | 7 | IO_B_3
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<3>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_3.LFBK
+INPUTMC | 1 | 0 | 7
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 113 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<3>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<3> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_3.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<3> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_3.LFBK;
+   IO_B<3>.CLK = !IOW;
+
+MACROCELL | 0 | 5 | IO_B_4
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<4>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_4.LFBK
+INPUTMC | 1 | 0 | 5
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 112 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<4>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<4> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_4.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<4> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_4.LFBK;
+   IO_B<4>.CLK = !IOW;
+
+MACROCELL | 0 | 4 | IO_B_5
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<5>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_5.LFBK
+INPUTMC | 1 | 0 | 4
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 107 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<5>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<5> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_5.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<5> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_5.LFBK;
+   IO_B<5>.CLK = !IOW;
+
+MACROCELL | 0 | 2 | IO_B_6
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<6>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_6.LFBK
+INPUTMC | 1 | 0 | 2
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 106 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<6>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<6> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_6.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<6> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_6.LFBK;
+   IO_B<6>.CLK = !IOW;
+
+MACROCELL | 0 | 1 | IO_B_7
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<7>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | IO_B_7.LFBK
+INPUTMC | 1 | 0 | 1
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 104 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   IO_B<7>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<7> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & IO_B_7.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<7> & SA<6> & SA<1> & SA<9> & 
+	!SA<0> & !IO_B_7.LFBK;
+   IO_B<7>.CLK = !IOW;
+
+MACROCELL | 3 | 16 | OUT_SD_10
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<2>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | OUT_SD_10.LFBK
+INPUTMC | 1 | 3 | 16
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 116 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   OUT_SD<10>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<2> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & OUT_SD_10.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<2> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & !OUT_SD_10.LFBK;
+   OUT_SD<10>.CLK = !IOW;
+
+MACROCELL | 1 | 2 | OUT_SD_8
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<0>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | OUT_SD_8.LFBK
+INPUTMC | 1 | 1 | 2
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 118 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   OUT_SD<8>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<0> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & OUT_SD_8.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<0> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & !OUT_SD_8.LFBK;
+   OUT_SD<8>.CLK = !IOW;
+
+MACROCELL | 1 | 1 | OUT_SD_9
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 15 | SA<5>  | SA<4>  | SA<3>  | SA<2>  | SA<8>  | SA<7>  | SA<11>  | SA<10>  | SD<1>  | SA<6>  | SA<1>  | SA<9>  | SA<0>  | IOW  | OUT_SD_9.LFBK
+INPUTMC | 1 | 1 | 1
+INPUTP | 14 | 78 | 80 | 82 | 83 | 72 | 74 | 65 | 67 | 117 | 76 | 86 | 70 | 87 | 53
+EQ | 7 | 
+   OUT_SD<9>.T = !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & SD<1> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & OUT_SD_9.LFBK
+	# !SA<5> & !SA<4> & !SA<3> & !SA<2> & !SA<8> & !SA<7> & 
+	!SA<11> & !SA<10> & !SD<1> & SA<6> & !SA<1> & SA<9> & 
+	!SA<0> & !OUT_SD_9.LFBK;
+   OUT_SD<9>.CLK = !IOW;
+
+MACROCELL | 2 | 15 | IOCS16_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 0
+EQ | 2 | 
+   IOCS16 = Gnd;
+   IOCS16.OE = Gnd;
+
+PIN | SA<5> | 64 | 0 | N/A | 78 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<4> | 64 | 0 | N/A | 80 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<3> | 64 | 0 | N/A | 82 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<2> | 64 | 0 | N/A | 83 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<8> | 64 | 0 | N/A | 72 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<7> | 64 | 0 | N/A | 74 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<11> | 64 | 0 | N/A | 65 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<10> | 64 | 0 | N/A | 67 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | IOW | 64 | 0 | N/A | 53 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<0> | 64 | 0 | N/A | 87 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<1> | 64 | 0 | N/A | 86 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<6> | 64 | 0 | N/A | 76 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SA<9> | 64 | 0 | N/A | 70 | 19 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 3 | 16 | 1 | 2 | 1 | 1
+PIN | SD<0> | 64 | 0 | N/A | 118 | 3 | 2 | 10 | 0 | 14 | 1 | 2
+PIN | SD<1> | 64 | 0 | N/A | 117 | 3 | 2 | 8 | 0 | 10 | 1 | 1
+PIN | SD<2> | 64 | 0 | N/A | 116 | 3 | 2 | 7 | 0 | 8 | 3 | 16
+PIN | SD<3> | 64 | 0 | N/A | 113 | 2 | 2 | 5 | 0 | 7
+PIN | SD<4> | 64 | 0 | N/A | 112 | 2 | 2 | 4 | 0 | 5
+PIN | SD<5> | 64 | 0 | N/A | 107 | 2 | 2 | 2 | 0 | 4
+PIN | SD<6> | 64 | 0 | N/A | 106 | 2 | 2 | 1 | 0 | 2
+PIN | SD<7> | 64 | 0 | N/A | 104 | 2 | 0 | 16 | 0 | 1
+PIN | IO_A<0> | 536871040 | 0 | N/A | 51
+PIN | IO_A<1> | 536871040 | 0 | N/A | 50
+PIN | IO_A<2> | 536871040 | 0 | N/A | 49
+PIN | IO_A<3> | 536871040 | 0 | N/A | 47
+PIN | IO_A<4> | 536871040 | 0 | N/A | 46
+PIN | IO_A<5> | 536871040 | 0 | N/A | 42
+PIN | IO_A<6> | 536871040 | 0 | N/A | 41
+PIN | IO_A<7> | 536871040 | 0 | N/A | 38
+PIN | IO_B<0> | 536871040 | 0 | N/A | 33
+PIN | IO_B<1> | 536871040 | 0 | N/A | 27
+PIN | IO_B<2> | 536871040 | 0 | N/A | 25
+PIN | IO_B<3> | 536871040 | 0 | N/A | 23
+PIN | IO_B<4> | 536871040 | 0 | N/A | 21
+PIN | IO_B<5> | 536871040 | 0 | N/A | 20
+PIN | IO_B<6> | 536871040 | 0 | N/A | 19
+PIN | IO_B<7> | 536871040 | 0 | N/A | 18
+PIN | OUT_SD<10> | 536871040 | 0 | N/A | 127
+PIN | OUT_SD<8> | 536871040 | 0 | N/A | 131
+PIN | OUT_SD<9> | 536871040 | 0 | N/A | 129
+PIN | IOCS16 | 536871040 | 0 | N/A | 56

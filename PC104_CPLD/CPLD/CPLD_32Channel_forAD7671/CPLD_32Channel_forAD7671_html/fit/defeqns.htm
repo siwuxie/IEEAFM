@@ -1,0 +1,247 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$16_INV$101 <= (SA(3) AND SA(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$17_INV$102 <= ((SA(3) AND SA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(3) AND NOT SA(2) AND NOT SA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+IOCS16 <= NOT (((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND SA(4) AND NOT SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND SA(2) AND NOT SA(4) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(4) AND SA(1) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(11) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND NOT IOW AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(12) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(13) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(14) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND SA(2) AND NOT SA(4) AND SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OUT_SD(15) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9));
+</td></tr><tr><td>
+FTCPE_OUT_SD_S8: FTCPE port map (OUT_SD_S(8),OUT_SD_S_T(8),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUT_SD_S_T(8) <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SD(0).PIN AND OUT_SD_S_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SD(0).PIN AND NOT OUT_SD_S_0.LFBK));
+</td></tr><tr><td>
+FTCPE_OUT_SD_S9: FTCPE port map (OUT_SD_S(9),OUT_SD_S_T(9),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUT_SD_S_T(9) <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SD(1).PIN AND OUT_SD_S_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SD(1).PIN AND NOT OUT_SD_S_1.LFBK));
+</td></tr><tr><td>
+FTCPE_OUT_SD_S10: FTCPE port map (OUT_SD_S(10),OUT_SD_S_T(10),NOT IOW,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OUT_SD_S_T(10) <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SD(2).PIN AND OUT_SD_S_2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SD(2).PIN AND NOT OUT_SD_S_2.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(0) <= SD(0)_MLTSRCEDGE;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(0) <= SD_I(0) when SD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(0) <= SD(0)_MLTSRCEDGE$BUF0/SD(0)_MLTSRCEDGE$BUF0_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(0)_MLTSRCEDGE$BUF0/SD(0)_MLTSRCEDGE$BUF0_TRST <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND SA(3) AND NOT SA(2) AND NOT SA(4) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND SA(2) AND NOT SA(4) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND NOT SA(4) AND SA(1) AND SA(5) AND SA(9)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(0)_MLTSRCEDGE\$WA0 <= NOT IO_B(0);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(0)_MLTSRCEDGE\$WA1 <= NOT IO_A(0);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(1)_MLTSRCEDGE$BUF0/SD(1)_MLTSRCEDGE$BUF0_TRST <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND SA(2) AND NOT SA(4) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND NOT SA(4) AND SA(1) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(0) AND NOT IOR AND SA(3) AND NOT SA(2) AND NOT SA(4) AND SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(1) <= SD(1)_MLTSRCEDGE;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(1) <= SD_I(1) when SD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(1) <= SD(1)_MLTSRCEDGE$BUF0/SD(1)_MLTSRCEDGE$BUF0_TRST.LFBK;
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(1)_MLTSRCEDGE\$WA1 <= NOT IO_A(1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(1)_MLTSRCEDGE\$WA0 <= NOT IO_B(1);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(2)_MLTSRCEDGE\$WA0 <= NOT IO_B(2);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(2) <= SD(2)_MLTSRCEDGE;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(2) <= SD_I(2) when SD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(2) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(2)_MLTSRCEDGE\$WA1 <= NOT IO_A(2);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(3) <= SD(3)_MLTSRCEDGE;
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(3) <= SD_I(3) when SD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(3) <= SD(3)_MLTSRCEDGE$BUF0/SD(3)_MLTSRCEDGE$BUF0_TRST;
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(3)_MLTSRCEDGE$BUF0/SD(3)_MLTSRCEDGE$BUF0_TRST <= ((NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND SA(2) AND NOT SA(4) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(3) AND NOT SA(4) AND SA(1) AND SA(5) AND SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(0) AND NOT IOR AND SA(3) AND SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND SA(3) AND NOT SA(2) AND NOT SA(4) AND NOT SA(1) AND SA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SA(9)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(3)_MLTSRCEDGE\$WA1 <= NOT IO_A(3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD(3)_MLTSRCEDGE\$WA0 <= NOT IO_B(3);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(4) <= NOT IO_A(4);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(4) <= SD_I(4) when SD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(4) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(5) <= NOT IO_A(5);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(5) <= SD_I(5) when SD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(5) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(6) <= NOT IO_A(6);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(6) <= SD_I(6) when SD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(6) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(7) <= NOT IO_A(7);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(7) <= SD_I(7) when SD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(7) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(8) <= NOT IN_SD(8);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(8) <= SD_I(8) when SD_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(8) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(9) <= NOT IN_SD(9);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(9) <= SD_I(9) when SD_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(9) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(10) <= NOT IN_SD(10);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(10) <= SD_I(10) when SD_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(10) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(11) <= NOT IN_SD(11);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(11) <= SD_I(11) when SD_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(11) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(12) <= NOT IN_SD(12);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(12) <= SD_I(12) when SD_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(12) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(13) <= NOT IN_SD(13);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(13) <= SD_I(13) when SD_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(13) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(14) <= NOT IN_SD(14);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(14) <= SD_I(14) when SD_OE(14) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(14) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+</td></tr><tr><td>
+SD_I(15) <= NOT IN_SD(15);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD(15) <= SD_I(15) when SD_OE(15) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SD_OE(15) <= (NOT SA(8) AND NOT SA(7) AND NOT SA(6) AND NOT SA(11) AND NOT SA(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SA(0) AND NOT IOR AND NOT SA(4) AND SA(5) AND SA(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$17_INV$102 AND NOT $OpTx$$OpTx$FX_DC$16_INV$101);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

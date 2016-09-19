@@ -1,0 +1,15 @@
+xst -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -ifn AD669_4Chips.xst -ofn AD669_4Chips.syr
+ngdbuild -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -dd _ngo -uc "AD669_4Chips.ucf" -p xc9500 "AD669_4Chips.ngc" AD669_4Chips.ngd
+cpldfit -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk AD669_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" AD669_4Chips_build.xml
+tsim -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise AD669_4Chips AD669_4Chips.nga
+taengine -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -f AD669_4Chips -w --format html1 -l F:/chendaixie/CPLD/CPLD_AD669_4Chips/AD669_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -s IEEE1149 -n AD669_4Chips -i AD669_4Chips
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -ifn AD669_4Chips.xst -ofn AD669_4Chips.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -dd _ngo -uc "AD669_4Chips.ucf" -p xc9500 "AD669_4Chips.ngc" AD669_4Chips.ngd
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -dd _ngo -uc "AD669_4Chips.ucf" -p xc9500 "AD669_4Chips.ngc" AD669_4Chips.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk AD669_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" AD669_4Chips_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise AD669_4Chips AD669_4Chips.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -intstyle ise -f AD669_4Chips -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/AD669_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD669_4Chips/CPLD_AD669_4Chips.ise" -s IEEE1149 -n AD669_4Chips -i AD669_4Chips

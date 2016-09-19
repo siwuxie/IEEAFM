@@ -1,0 +1,113 @@
+Release 8.1i - Fit J.33
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+11-25-2013  3:47PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  CPLD_32Channel_forSignalBoard.ngd
+output file: CPLD_32Channel_forSignalBoard_pad.csv
+Part type:   xc95108
+Speed grade: -7
+Package:     pc84
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,IO_B<7>,O,I/O,OUTPUT,,,,,,,,,
+P2,IO_B<6>,O,I/O,OUTPUT,,,,,,,,,
+P3,IO_B<5>,O,I/O,OUTPUT,,,,,,,,,
+P4,IO_B<4>,O,I/O,OUTPUT,,,,,,,,,
+P5,IO_B<3>,O,I/O,OUTPUT,,,,,,,,,
+P6,IO_B<2>,O,I/O,OUTPUT,,,,,,,,,
+P7,IO_B<1>,O,I/O,OUTPUT,,,,,,,,,
+P8,GND,,GND,,,,,,,,,,
+P9,TIE,,I/O/GCK1,,,,,,,,,,
+P10,TIE,,I/O/GCK2,,,,,,,,,,
+P11,IO_B<0>,O,I/O,OUTPUT,,,,,,,,,
+P12,TIE,,I/O/GCK3,,,,,,,,,,
+P13,IO_A<7>,O,I/O,OUTPUT,,,,,,,,,
+P14,IO_A<6>,O,I/O,OUTPUT,,,,,,,,,
+P15,IO_A<5>,O,I/O,OUTPUT,,,,,,,,,
+P16,GND,,GND,,,,,,,,,,
+P17,IO_A<4>,O,I/O,OUTPUT,,,,,,,,,
+P18,IO_A<3>,O,I/O,OUTPUT,,,,,,,,,
+P19,IO_A<2>,O,I/O,OUTPUT,,,,,,,,,
+P20,IO_A<1>,O,I/O,OUTPUT,,,,,,,,,
+P21,IO_A<0>,O,I/O,OUTPUT,,,,,,,,,
+P22,VCC,,VCCIO,,,,,,,,,,
+P23,IOW,I,I/O,INPUT,,,,,,,,,
+P24,TIE,,I/O,,,,,,,,,,
+P25,TIE,,I/O,,,,,,,,,,
+P26,IOCS16,O,I/O,OUTPUT,,,,,,,,,
+P27,GND,,GND,,,,,,,,,,
+P28,TDI,,TDI,,,,,,,,,,
+P29,TMS,,TMS,,,,,,,,,,
+P30,TCK,,TCK,,,,,,,,,,
+P31,SA<11>,I,I/O,INPUT,,,,,,,,,
+P32,SA<10>,I,I/O,INPUT,,,,,,,,,
+P33,SA<9>,I,I/O,INPUT,,,,,,,,,
+P34,SA<8>,I,I/O,INPUT,,,,,,,,,
+P35,SA<7>,I,I/O,INPUT,,,,,,,,,
+P36,SA<6>,I,I/O,INPUT,,,,,,,,,
+P37,SA<5>,I,I/O,INPUT,,,,,,,,,
+P38,VCC,,VCCINT,,,,,,,,,,
+P39,SA<4>,I,I/O,INPUT,,,,,,,,,
+P40,SA<3>,I,I/O,INPUT,,,,,,,,,
+P41,SA<2>,I,I/O,INPUT,,,,,,,,,
+P42,GND,,GND,,,,,,,,,,
+P43,SA<1>,I,I/O,INPUT,,,,,,,,,
+P44,SA<0>,I,I/O,INPUT,,,,,,,,,
+P45,TIE,,I/O,,,,,,,,,,
+P46,TIE,,I/O,,,,,,,,,,
+P47,TIE,,I/O,,,,,,,,,,
+P48,TIE,,I/O,,,,,,,,,,
+P49,GND,,GND,,,,,,,,,,
+P50,TIE,,I/O,,,,,,,,,,
+P51,TIE,,I/O,,,,,,,,,,
+P52,TIE,,I/O,,,,,,,,,,
+P53,TIE,,I/O,,,,,,,,,,
+P54,SD<7>,I,I/O,INPUT,,,,,,,,,
+P55,SD<6>,I,I/O,INPUT,,,,,,,,,
+P56,SD<5>,I,I/O,INPUT,,,,,,,,,
+P57,SD<4>,I,I/O,INPUT,,,,,,,,,
+P58,SD<3>,I,I/O,INPUT,,,,,,,,,
+P59,TDO,,TDO,,,,,,,,,,
+P60,GND,,GND,,,,,,,,,,
+P61,SD<2>,I,I/O,INPUT,,,,,,,,,
+P62,SD<1>,I,I/O,INPUT,,,,,,,,,
+P63,SD<0>,I,I/O,INPUT,,,,,,,,,
+P64,VCC,,VCCIO,,,,,,,,,,
+P65,TIE,,I/O,,,,,,,,,,
+P66,TIE,,I/O,,,,,,,,,,
+P67,TIE,,I/O,,,,,,,,,,
+P68,TIE,,I/O,,,,,,,,,,
+P69,TIE,,I/O,,,,,,,,,,
+P70,OUT_SD<10>,O,I/O,OUTPUT,,,,,,,,,
+P71,OUT_SD<9>,O,I/O,OUTPUT,,,,,,,,,
+P72,OUT_SD<8>,O,I/O,OUTPUT,,,,,,,,,
+P73,VCC,,VCCINT,,,,,,,,,,
+P74,TIE,,I/O/GSR,,,,,,,,,,
+P75,TIE,,I/O,,,,,,,,,,
+P76,TIE,,I/O/GTS1,,,,,,,,,,
+P77,TIE,,I/O/GTS2,,,,,,,,,,
+P78,VCC,,VCCINT,,,,,,,,,,
+P79,TIE,,I/O,,,,,,,,,,
+P80,TIE,,I/O,,,,,,,,,,
+P81,TIE,,I/O,,,,,,,,,,
+P82,TIE,,I/O,,,,,,,,,,
+P83,TIE,,I/O,,,,,,,,,,
+P84,TIE,,I/O,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

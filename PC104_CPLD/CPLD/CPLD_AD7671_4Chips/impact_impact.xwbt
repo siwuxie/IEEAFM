@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\Project-NewOpticalSys\OpticalCouple_TD\CPLD\CPLD_AD7671_4Chips\impact.xsl
+OUTFILE=E:\Project-NewOpticalSys\OpticalCouple_TD\CPLD\CPLD_AD7671_4Chips\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=E:\Project-NewOpticalSys\OpticalCouple_TD\CPLD\CPLD_AD7671_4Chips
+LICENSE=iMPACT
+USER_INFO=iMPACT

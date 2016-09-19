@@ -1,0 +1,434 @@
+MDF Database:  version 1.0
+MDF_INFO | CPLD_32Channel | XC95108-7-PC84
+MACROCELL | 0 | 11 | IOCS16_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>
+INPUTP | 10 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 2 | 
+   !IOCS16 = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !SA<5> & 
+	SA<4> & !SA<7> & !SA<8> & !SA<6> & SA<9>;
+
+MACROCELL | 1 | 2 | CPLD_OUT_0
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<0>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_0.LFBK
+INPUTMC | 1 | 1 | 2
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 118 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<0>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<0>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_0.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<0>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_0.LFBK;
+   CPLD_OUT<0>.CLK = !IOW;
+
+MACROCELL | 1 | 1 | CPLD_OUT_1
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<1>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_1.LFBK
+INPUTMC | 1 | 1 | 1
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 117 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<1>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<1>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_1.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<1>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_1.LFBK;
+   CPLD_OUT<1>.CLK = !IOW;
+
+MACROCELL | 3 | 16 | CPLD_OUT_2
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<2>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_2.LFBK
+INPUTMC | 1 | 3 | 16
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 116 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<2>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<2>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_2.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<2>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_2.LFBK;
+   CPLD_OUT<2>.CLK = !IOW;
+
+MACROCELL | 3 | 14 | CPLD_OUT_3
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<3>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_3.LFBK
+INPUTMC | 1 | 3 | 14
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 113 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<3>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<3>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_3.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<3>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_3.LFBK;
+   CPLD_OUT<3>.CLK = !IOW;
+
+MACROCELL | 3 | 13 | CPLD_OUT_4
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 13
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<4>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_4.LFBK
+INPUTMC | 1 | 3 | 13
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 112 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<4>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<4>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_4.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<4>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_4.LFBK;
+   CPLD_OUT<4>.CLK = !IOW;
+
+MACROCELL | 3 | 11 | CPLD_OUT_5
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 11
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<5>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_5.LFBK
+INPUTMC | 1 | 3 | 11
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 107 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<5>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<5>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_5.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<5>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_5.LFBK;
+   CPLD_OUT<5>.CLK = !IOW;
+
+MACROCELL | 3 | 10 | CPLD_OUT_6
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 10
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<6>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_6.LFBK
+INPUTMC | 1 | 3 | 10
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 106 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<6>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<6>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_6.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<6>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_6.LFBK;
+   CPLD_OUT<6>.CLK = !IOW;
+
+MACROCELL | 3 | 8 | CPLD_OUT_7
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 8
+INPUTS | 15 | SA<3>  | SA<11>  | SA<10>  | SA<0>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SD<7>.PIN  | SA<2>  | SA<9>  | SA<1>  | IOW  | CPLD_OUT_7.LFBK
+INPUTMC | 1 | 3 | 8
+INPUTP | 14 | 82 | 65 | 67 | 87 | 78 | 80 | 74 | 72 | 76 | 104 | 83 | 70 | 86 | 53
+EQ | 7 | 
+   CPLD_OUT<7>.T = !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & SD<7>.PIN & !SA<2> & 
+	SA<9> & SA<1> & !CPLD_OUT_7.LFBK
+	# !SA<3> & !SA<11> & !SA<10> & SA<0> & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SD<7>.PIN & !SA<2> & 
+	SA<9> & SA<1> & CPLD_OUT_7.LFBK;
+   CPLD_OUT<7>.CLK = !IOW;
+
+MACROCELL | 3 | 7 | CPLD_IN_0_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<0>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 16 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<0> = CPLD_IN<0>;
+   SD<0>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 3 | 5 | CPLD_IN_1_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<1>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 15 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<1> = CPLD_IN<1>;
+   SD<1>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 3 | 4 | CPLD_IN_2_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<2>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 14 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<2> = CPLD_IN<2>;
+   SD<2>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 3 | 2 | CPLD_IN_3_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<3>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 12 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<3> = CPLD_IN<3>;
+   SD<3>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 3 | 1 | CPLD_IN_4_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<4>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 10 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<4> = CPLD_IN<4>;
+   SD<4>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 5 | 16 | CPLD_IN_5_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<5>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 8 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<5> = CPLD_IN<5>;
+   SD<5>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 5 | 14 | CPLD_IN_6_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<6>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 2 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<6> = CPLD_IN<6>;
+   SD<6>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 5 | 13 | CPLD_IN_7_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 14 | CPLD_IN<7>  | SA<3>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<2>  | SA<9>  | SA<1>
+INPUTP | 14 | 134 | 82 | 65 | 67 | 87 | 54 | 78 | 80 | 74 | 72 | 76 | 83 | 70 | 86
+EQ | 3 | 
+   SD<7> = CPLD_IN<7>;
+   SD<7>.OE = !SA<3> & !SA<11> & !SA<10> & !SA<0> & !IOR & !SA<5> & 
+	!SA<4> & !SA<7> & !SA<8> & !SA<6> & !SA<2> & SA<9> & SA<1>;
+
+MACROCELL | 2 | 10 | CPLD_SD_0_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<0>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 118 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<0> = SD<0>.PIN;
+   CPLD_SD<0>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 8 | CPLD_SD_1_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<1>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 117 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<1> = SD<1>.PIN;
+   CPLD_SD<1>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 7 | CPLD_SD_2_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<2>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 116 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<2> = SD<2>.PIN;
+   CPLD_SD<2>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 5 | CPLD_SD_3_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<3>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 113 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<3> = SD<3>.PIN;
+   CPLD_SD<3>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 4 | CPLD_SD_4_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<4>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 112 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<4> = SD<4>.PIN;
+   CPLD_SD<4>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 2 | CPLD_SD_5_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<5>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 107 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<5> = SD<5>.PIN;
+   CPLD_SD<5>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 2 | 1 | CPLD_SD_6_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<6>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 106 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<6> = SD<6>.PIN;
+   CPLD_SD<6>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 16 | CPLD_SD_7_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<7>.PIN  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 104 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<7> = SD<7>.PIN;
+   CPLD_SD<7>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 8 | SD_10_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<10>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 97 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<10> = SD<10>;
+   CPLD_SD<10>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 7 | SD_11_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<11>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 95 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<11> = SD<11>;
+   CPLD_SD<11>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 5 | SD_12_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<12>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 93 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<12> = SD<12>;
+   CPLD_SD<12>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 4 | SD_13_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<13>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 91 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<13> = SD<13>;
+   CPLD_SD<13>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 2 | SD_14_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<14>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 89 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<14> = SD<14>;
+   CPLD_SD<14>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 1 | SD_15_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<15>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 88 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<15> = SD<15>;
+   CPLD_SD<15>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 14 | SD_8_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<8>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 101 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<8> = SD<8>;
+   CPLD_SD<8>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 0 | 10 | SD_9_IBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 10 | SD<9>  | SA<11>  | SA<10>  | SA<5>  | SA<4>  | SA<7>  | SA<8>  | SA<6>  | SA<9>  | $OpTx$FX_DC$3
+INPUTMC | 1 | 3 | 17
+INPUTP | 9 | 99 | 65 | 67 | 78 | 80 | 74 | 72 | 76 | 70
+EQ | 3 | 
+   CPLD_SD<9> = SD<9>;
+   CPLD_SD<9>.OE = !SA<11> & !SA<10> & !SA<5> & SA<4> & !SA<7> & 
+	!SA<8> & !SA<6> & SA<9> & $OpTx$FX_DC$3;
+
+MACROCELL | 3 | 17 | $OpTx$FX_DC$3
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 16 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+INPUTS | 3 | SA<3>  | SA<0>  | SA<2>
+INPUTP | 3 | 82 | 87 | 83
+EQ | 2 | 
+   $OpTx$FX_DC$3 = SA<3> & !SA<2>
+	# !SA<3> & !SA<0>;
+
+PIN | SA<3> | 64 | 0 | N/A | 82 | 18 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 3 | 17
+PIN | SA<11> | 64 | 0 | N/A | 65 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<10> | 64 | 0 | N/A | 67 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<0> | 64 | 0 | N/A | 87 | 18 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 3 | 17
+PIN | SA<4> | 64 | 0 | N/A | 80 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<5> | 64 | 0 | N/A | 78 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<6> | 64 | 0 | N/A | 76 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<7> | 64 | 0 | N/A | 74 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<8> | 64 | 0 | N/A | 72 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | SA<9> | 64 | 0 | N/A | 70 | 33 | 0 | 11 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 2 | 10 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 4 | 2 | 2 | 2 | 1 | 0 | 16 | 0 | 8 | 0 | 7 | 0 | 5 | 0 | 4 | 0 | 2 | 0 | 1 | 0 | 14 | 0 | 10
+PIN | IOR | 64 | 0 | N/A | 54 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13
+PIN | IOW | 64 | 0 | N/A | 53 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8
+PIN | SA<2> | 64 | 0 | N/A | 83 | 17 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 3 | 17
+PIN | SA<1> | 64 | 0 | N/A | 86 | 16 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 3 | 7 | 3 | 5 | 3 | 4 | 3 | 2 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13
+PIN | CPLD_IN<0> | 64 | 0 | N/A | 16 | 1 | 3 | 7
+PIN | CPLD_IN<1> | 64 | 0 | N/A | 15 | 1 | 3 | 5
+PIN | CPLD_IN<2> | 64 | 0 | N/A | 14 | 1 | 3 | 4
+PIN | CPLD_IN<3> | 64 | 0 | N/A | 12 | 1 | 3 | 2
+PIN | CPLD_IN<4> | 64 | 0 | N/A | 10 | 1 | 3 | 1
+PIN | CPLD_IN<5> | 64 | 0 | N/A | 8 | 1 | 5 | 16
+PIN | CPLD_IN<6> | 64 | 0 | N/A | 2 | 1 | 5 | 14
+PIN | CPLD_IN<7> | 64 | 0 | N/A | 134 | 1 | 5 | 13
+PIN | SD<10> | 64 | 0 | N/A | 97 | 1 | 0 | 8
+PIN | SD<11> | 64 | 0 | N/A | 95 | 1 | 0 | 7
+PIN | SD<12> | 64 | 0 | N/A | 93 | 1 | 0 | 5
+PIN | SD<13> | 64 | 0 | N/A | 91 | 1 | 0 | 4
+PIN | SD<14> | 64 | 0 | N/A | 89 | 1 | 0 | 2
+PIN | SD<15> | 64 | 0 | N/A | 88 | 1 | 0 | 1
+PIN | SD<8> | 64 | 0 | N/A | 101 | 1 | 0 | 14
+PIN | SD<9> | 64 | 0 | N/A | 99 | 1 | 0 | 10
+PIN | IOCS16 | 536871040 | 0 | N/A | 29
+PIN | CPLD_OUT<0> | 536871040 | 0 | N/A | 131
+PIN | CPLD_OUT<1> | 536871040 | 0 | N/A | 129
+PIN | CPLD_OUT<2> | 536871040 | 0 | N/A | 127
+PIN | CPLD_OUT<3> | 536871040 | 0 | N/A | 126
+PIN | CPLD_OUT<4> | 536871040 | 0 | N/A | 124
+PIN | CPLD_OUT<5> | 536871040 | 0 | N/A | 122
+PIN | CPLD_OUT<6> | 536871040 | 0 | N/A | 121
+PIN | CPLD_OUT<7> | 536871040 | 0 | N/A | 120
+PIN | CPLD_SD<0> | 536871040 | 0 | N/A | 51
+PIN | CPLD_SD<1> | 536871040 | 0 | N/A | 50
+PIN | CPLD_SD<2> | 536871040 | 0 | N/A | 49
+PIN | CPLD_SD<3> | 536871040 | 0 | N/A | 47
+PIN | CPLD_SD<4> | 536871040 | 0 | N/A | 46
+PIN | CPLD_SD<5> | 536871040 | 0 | N/A | 42
+PIN | CPLD_SD<6> | 536871040 | 0 | N/A | 41
+PIN | CPLD_SD<7> | 536871040 | 0 | N/A | 38
+PIN | CPLD_SD<10> | 536871040 | 0 | N/A | 25
+PIN | CPLD_SD<11> | 536871040 | 0 | N/A | 23
+PIN | CPLD_SD<12> | 536871040 | 0 | N/A | 21
+PIN | CPLD_SD<13> | 536871040 | 0 | N/A | 20
+PIN | CPLD_SD<14> | 536871040 | 0 | N/A | 19
+PIN | CPLD_SD<15> | 536871040 | 0 | N/A | 18
+PIN | CPLD_SD<8> | 536871040 | 0 | N/A | 33
+PIN | CPLD_SD<9> | 536871040 | 0 | N/A | 27
+PIN | SD<0> | 536870976 | 0 | N/A | 118 | 2 | 1 | 2 | 2 | 10
+PIN | SD<1> | 536870976 | 0 | N/A | 117 | 2 | 1 | 1 | 2 | 8
+PIN | SD<2> | 536870976 | 0 | N/A | 116 | 2 | 3 | 16 | 2 | 7
+PIN | SD<3> | 536870976 | 0 | N/A | 113 | 2 | 3 | 14 | 2 | 5
+PIN | SD<4> | 536870976 | 0 | N/A | 112 | 2 | 3 | 13 | 2 | 4
+PIN | SD<5> | 536870976 | 0 | N/A | 107 | 2 | 3 | 11 | 2 | 2
+PIN | SD<6> | 536870976 | 0 | N/A | 106 | 2 | 3 | 10 | 2 | 1
+PIN | SD<7> | 536870976 | 0 | N/A | 104 | 2 | 3 | 8 | 0 | 16

@@ -1,0 +1,10 @@
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -ifn CPLD_SignalBoard.xst -ofn CPLD_SignalBoard.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -ifn CPLD_SignalBoard.xst -ofn CPLD_SignalBoard.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -dd _ngo -uc "CPLD_SignalBoard.ucf" -p xc9500 "CPLD_SignalBoard.ngc" CPLD_SignalBoard.ngd
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -ifn CPLD_SignalBoard.xst -ofn CPLD_SignalBoard.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -dd _ngo -uc "CPLD_SignalBoard.ucf" -p xc9500 "CPLD_SignalBoard.ngc" CPLD_SignalBoard.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_SignalBoard.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" CPLD_SignalBoard_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise CPLD_SignalBoard CPLD_SignalBoard.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -intstyle ise -f CPLD_SignalBoard -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_SignalBoard/CPLD_SignalBoard.ise" -s IEEE1149 -n CPLD_SignalBoard -i CPLD_SignalBoard

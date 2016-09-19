@@ -1,0 +1,38 @@
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -dd _ngo -uc "CPLD_AD7671_4Chips.ucf" -p xc9500 "CPLD_AD7671_4Chips.ngc" CPLD_AD7671_4Chips.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_AD7671_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" CPLD_AD7671_4Chips_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise CPLD_AD7671_4Chips CPLD_AD7671_4Chips.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -f CPLD_AD7671_4Chips -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -s IEEE1149 -n CPLD_AD7671_4Chips -i CPLD_AD7671_4Chips
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -dd _ngo -uc "CPLD_AD7671_4Chips.ucf" -p xc9500 "CPLD_AD7671_4Chips.ngc" CPLD_AD7671_4Chips.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_AD7671_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" CPLD_AD7671_4Chips_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise CPLD_AD7671_4Chips CPLD_AD7671_4Chips.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -f CPLD_AD7671_4Chips -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -s IEEE1149 -n CPLD_AD7671_4Chips -i CPLD_AD7671_4Chips
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -dd _ngo -uc "CPLD_AD7671_4Chips.ucf" -p xc9500 "CPLD_AD7671_4Chips.ngc" CPLD_AD7671_4Chips.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_AD7671_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" CPLD_AD7671_4Chips_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise CPLD_AD7671_4Chips CPLD_AD7671_4Chips.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -f CPLD_AD7671_4Chips -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -s IEEE1149 -n CPLD_AD7671_4Chips -i CPLD_AD7671_4Chips
+xst -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -ifn CPLD_AD7671_4Chips.xst -ofn CPLD_AD7671_4Chips.syr
+ngdbuild -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -dd _ngo -uc "CPLD_AD7671_4Chips.ucf" -p xc9500 "CPLD_AD7671_4Chips.ngc" CPLD_AD7671_4Chips.ngd
+cpldfit -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_AD7671_4Chips.ngd
+XSLTProcess -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" CPLD_AD7671_4Chips_build.xml
+tsim -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise CPLD_AD7671_4Chips CPLD_AD7671_4Chips.nga
+taengine -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -intstyle ise -f CPLD_AD7671_4Chips -w --format html1 -l F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips_html/tim/timing_report.htm
+hprep6 -ise "F:/chendaixie/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.ise" -s IEEE1149 -n CPLD_AD7671_4Chips -i CPLD_AD7671_4Chips
+xst -intstyle ise -ifn "E:/Project-NewOpticalSys/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.xst" -ofn "E:/Project-NewOpticalSys/OpticalCouple_TD/CPLD/CPLD_AD7671_4Chips/CPLD_AD7671_4Chips.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc CPLD_AD7671_4Chips.ucf -p xc95108-PC84-7 CPLD_AD7671_4Chips.ngc CPLD_AD7671_4Chips.ngd  
+cpldfit -intstyle ise -p xc95108-7-PC84 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk CPLD_AD7671_4Chips.ngd 
+XSLTProcess CPLD_AD7671_4Chips_build.xml 
+tsim -intstyle ise CPLD_AD7671_4Chips CPLD_AD7671_4Chips.nga 
+taengine -intstyle ise -f CPLD_AD7671_4Chips -w --format html1 -l CPLD_AD7671_4Chips_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n CPLD_AD7671_4Chips -i CPLD_AD7671_4Chips 

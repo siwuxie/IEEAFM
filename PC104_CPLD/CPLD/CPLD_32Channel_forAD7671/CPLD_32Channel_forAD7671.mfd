@@ -1,0 +1,481 @@
+MDF Database:  version 1.0
+MDF_INFO | CPLD_32Channel_forAD7671 | XC95108-7-PC84
+MACROCELL | 2 | 15 | IOCS16_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 12 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | SA<3>  | SA<4>  | SA<5>  | SA<9>  | SA<2>  | SA<1>
+INPUTP | 12 | 72 | 74 | 76 | 65 | 67 | 87 | 82 | 80 | 78 | 70 | 83 | 86
+EQ | 8 | 
+   !IOCS16 = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & SA<4> & !SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & SA<2> & !SA<4> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<4> & SA<1> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9>;
+
+MACROCELL | 3 | 13 | OUT_SD_12_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 3 | 
+   OUT_SD<12> = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & !SA<2> & !SA<4> & SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 3 | 11 | OUT_SD_13_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 3 | 
+   OUT_SD<13> = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 3 | 10 | OUT_SD_14_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 3 | 
+   OUT_SD<14> = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & SA<2> & !SA<4> & SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 3 | 8 | OUT_SD_15_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 3 | 
+   OUT_SD<15> = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 1 | 2 | OUT_SD_S_0
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 15 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>  | SD<0>.PIN  | IOW  | OUT_SD_S_0.LFBK
+INPUTMC | 1 | 1 | 2
+INPUTP | 14 | 72 | 74 | 76 | 65 | 67 | 87 | 82 | 83 | 80 | 86 | 78 | 70 | 118 | 53
+EQ | 7 | 
+   OUT_SD_S<8>.T = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	SD<0>.PIN & OUT_SD_S_0.LFBK
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	!SD<0>.PIN & !OUT_SD_S_0.LFBK;
+   OUT_SD_S<8>.CLK = !IOW;
+
+MACROCELL | 1 | 1 | OUT_SD_S_1
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 15 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>  | SD<1>.PIN  | IOW  | OUT_SD_S_1.LFBK
+INPUTMC | 1 | 1 | 1
+INPUTP | 14 | 72 | 74 | 76 | 65 | 67 | 87 | 82 | 83 | 80 | 86 | 78 | 70 | 117 | 53
+EQ | 7 | 
+   OUT_SD_S<9>.T = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	SD<1>.PIN & OUT_SD_S_1.LFBK
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	!SD<1>.PIN & !OUT_SD_S_1.LFBK;
+   OUT_SD_S<9>.CLK = !IOW;
+
+MACROCELL | 3 | 16 | OUT_SD_S_2
+ATTRIBUTES | 4653858 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 15 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>  | SD<2>.PIN  | IOW  | OUT_SD_S_2.LFBK
+INPUTMC | 1 | 3 | 16
+INPUTP | 14 | 72 | 74 | 76 | 65 | 67 | 87 | 82 | 83 | 80 | 86 | 78 | 70 | 116 | 53
+EQ | 7 | 
+   OUT_SD_S<10>.T = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	SD<2>.PIN & OUT_SD_S_2.LFBK
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & SA<9> & 
+	!SD<2>.PIN & !OUT_SD_S_2.LFBK;
+   OUT_SD_S<10>.CLK = !IOW;
+
+MACROCELL | 3 | 7 | SD<0>_MLTSRCEDGE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | SD<0>_MLTSRCEDGE  | SD<0>_MLTSRCEDGE$BUF0/SD<0>_MLTSRCEDGE$BUF0_TRST
+INPUTMC | 1 | 1 | 17
+EQ | 2 | 
+   SD<0> = SD<0>_MLTSRCEDGE;
+   SD<0>.OE = SD<0>_MLTSRCEDGE$BUF0/SD<0>_MLTSRCEDGE$BUF0_TRST;
+
+MACROCELL | 5 | 8 | SD<10>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<10>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 14 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<10> = !IN_SD<10>;
+   SD<10>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 7 | SD<11>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<11>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 12 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<11> = !IN_SD<11>;
+   SD<11>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 5 | SD<12>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<12>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 10 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<12> = !IN_SD<12>;
+   SD<12>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 4 | SD<13>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<13>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 8 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<13> = !IN_SD<13>;
+   SD<13>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 2 | SD<14>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<14>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 2 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<14> = !IN_SD<14>;
+   SD<14>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 1 | SD<15>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<15>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 134 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<15> = !IN_SD<15>;
+   SD<15>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 5 | SD<1>_MLTSRCEDGE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | SD<1>_MLTSRCEDGE  | SD<1>_MLTSRCEDGE$BUF0/SD<1>_MLTSRCEDGE$BUF0_TRST.LFBK
+INPUTMC | 1 | 3 | 17
+EQ | 3 | 
+   SD<1> = SD<1>_MLTSRCEDGE;
+   SD<1>.OE = 
+	SD<1>_MLTSRCEDGE$BUF0/SD<1>_MLTSRCEDGE$BUF0_TRST.LFBK;
+
+MACROCELL | 3 | 4 | SD<2>_MLTSRCEDGE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 12 | SD<2>_MLTSRCEDGE  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102
+INPUTMC | 1 | 1 | 16
+INPUTP | 10 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<2> = SD<2>_MLTSRCEDGE;
+   SD<2>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102;
+
+MACROCELL | 3 | 2 | SD<3>_MLTSRCEDGE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | SD<3>_MLTSRCEDGE  | SD<3>_MLTSRCEDGE$BUF0/SD<3>_MLTSRCEDGE$BUF0_TRST
+INPUTMC | 1 | 5 | 17
+EQ | 2 | 
+   SD<3> = SD<3>_MLTSRCEDGE;
+   SD<3>.OE = SD<3>_MLTSRCEDGE$BUF0/SD<3>_MLTSRCEDGE$BUF0_TRST;
+
+MACROCELL | 3 | 1 | SD<4>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IO_A<4>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 46 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<4> = !IO_A<4>;
+   SD<4>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 16 | SD<5>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IO_A<5>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 42 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<5> = !IO_A<5>;
+   SD<5>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 14 | SD<6>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IO_A<6>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 41 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<6> = !IO_A<6>;
+   SD<6>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 13 | SD<7>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IO_A<7>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 38 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<7> = !IO_A<7>;
+   SD<7>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 11 | SD<8>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<8>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 16 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<8> = !IN_SD<8>;
+   SD<8>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 5 | 10 | SD<9>_not0001
+ATTRIBUTES | 265986 | 0
+INPUTS | 13 | IN_SD<9>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 15 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<9> = !IN_SD<9>;
+   SD<9>.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 15 | SD<0>_MLTSRCEDGE\$WA0
+ATTRIBUTES | 134912 | 0
+INPUTS | 14 | IO_B<0>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 14 | 33 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 4 | 
+   SD<0>_MLTSRCEDGE\$WA0 = !IO_B<0>;
+   SD<0>_MLTSRCEDGE\$WA0.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 5 | 15 | SD<0>_MLTSRCEDGE\$WA1
+ATTRIBUTES | 134912 | 0
+INPUTS | 13 | IO_A<0>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 51 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<0>_MLTSRCEDGE\$WA1 = !IO_A<0>;
+   SD<0>_MLTSRCEDGE\$WA1.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 12 | SD<1>_MLTSRCEDGE\$WA0
+ATTRIBUTES | 134912 | 0
+INPUTS | 14 | IO_B<1>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 14 | 27 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 4 | 
+   SD<1>_MLTSRCEDGE\$WA0 = !IO_B<1>;
+   SD<1>_MLTSRCEDGE\$WA0.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 5 | 12 | SD<1>_MLTSRCEDGE\$WA1
+ATTRIBUTES | 134912 | 0
+INPUTS | 13 | IO_A<1>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 50 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<1>_MLTSRCEDGE\$WA1 = !IO_A<1>;
+   SD<1>_MLTSRCEDGE\$WA1.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 9 | SD<2>_MLTSRCEDGE\$WA0
+ATTRIBUTES | 134912 | 0
+INPUTS | 14 | IO_B<2>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 14 | 25 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 4 | 
+   SD<2>_MLTSRCEDGE\$WA0 = !IO_B<2>;
+   SD<2>_MLTSRCEDGE\$WA0.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 5 | 9 | SD<2>_MLTSRCEDGE\$WA1
+ATTRIBUTES | 134912 | 0
+INPUTS | 13 | IO_A<2>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 49 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<2>_MLTSRCEDGE\$WA1 = !IO_A<2>;
+   SD<2>_MLTSRCEDGE\$WA1.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 6 | SD<3>_MLTSRCEDGE\$WA0
+ATTRIBUTES | 134912 | 0
+INPUTS | 14 | IO_B<3>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | SA<5>  | SA<9>
+INPUTP | 14 | 23 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 86 | 78 | 70
+EQ | 4 | 
+   SD<3>_MLTSRCEDGE\$WA0 = !IO_B<3>;
+   SD<3>_MLTSRCEDGE\$WA0.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	SA<0> & !IOR & SA<3> & SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 5 | 6 | SD<3>_MLTSRCEDGE\$WA1
+ATTRIBUTES | 134912 | 0
+INPUTS | 13 | IO_A<3>  | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<4>  | SA<5>  | SA<9>  | $OpTx$$OpTx$FX_DC$17_INV$102  | $OpTx$$OpTx$FX_DC$16_INV$101
+INPUTMC | 2 | 1 | 16 | 1 | 15
+INPUTP | 11 | 47 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 80 | 78 | 70
+EQ | 4 | 
+   SD<3>_MLTSRCEDGE\$WA1 = !IO_A<3>;
+   SD<3>_MLTSRCEDGE\$WA1.OE = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<4> & SA<5> & SA<9> & 
+	!$OpTx$$OpTx$FX_DC$17_INV$102 & !$OpTx$$OpTx$FX_DC$16_INV$101;
+
+MACROCELL | 3 | 14 | OUT_SD_11_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | SA<3>  | SA<2>  | SA<4>  | SA<1>  | IOW  | SA<5>  | SA<9>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 82 | 83 | 80 | 86 | 53 | 78 | 70
+EQ | 3 | 
+   OUT_SD<11> = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	SA<0> & !SA<3> & !SA<2> & !SA<4> & !SA<1> & !IOW & SA<5> & 
+	SA<9>;
+
+MACROCELL | 1 | 17 | SD<0>_MLTSRCEDGE$BUF0/SD<0>_MLTSRCEDGE$BUF0_TRST
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 7
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<5>  | SA<9>  | SA<1>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 78 | 70 | 86
+EQ | 6 | 
+   SD<0>_MLTSRCEDGE$BUF0/SD<0>_MLTSRCEDGE$BUF0_TRST = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & SA<2> & !SA<4> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & !SA<4> & SA<1> & SA<5> & SA<9>;
+
+MACROCELL | 1 | 16 | $OpTx$$OpTx$FX_DC$17_INV$102
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 17 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 5 | 15 | 5 | 12 | 5 | 9 | 5 | 6
+INPUTS | 3 | SA<3>  | SA<1>  | SA<2>
+INPUTP | 3 | 82 | 86 | 83
+EQ | 2 | 
+   $OpTx$$OpTx$FX_DC$17_INV$102 = SA<3> & SA<1>
+	# !SA<3> & !SA<2> & !SA<1>;
+
+MACROCELL | 1 | 15 | $OpTx$$OpTx$FX_DC$16_INV$101
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 5 | 15 | 5 | 12 | 5 | 9 | 5 | 6
+INPUTS | 2 | SA<3>  | SA<2>
+INPUTP | 2 | 82 | 83
+EQ | 1 | 
+   $OpTx$$OpTx$FX_DC$16_INV$101 = SA<3> & SA<2>;
+
+MACROCELL | 3 | 17 | SD<1>_MLTSRCEDGE$BUF0/SD<1>_MLTSRCEDGE$BUF0_TRST
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<2>  | SA<4>  | SA<5>  | SA<9>  | SA<1>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 83 | 80 | 78 | 70 | 86
+EQ | 10 | 
+   SD<1>_MLTSRCEDGE$BUF0/SD<1>_MLTSRCEDGE$BUF0_TRST = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & SA<2> & !SA<4> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & !SA<4> & SA<1> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & SA<1> & SA<5> & 
+	SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+MACROCELL | 5 | 17 | SD<3>_MLTSRCEDGE$BUF0/SD<3>_MLTSRCEDGE$BUF0_TRST
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 3 | 2
+INPUTS | 13 | SA<8>  | SA<7>  | SA<6>  | SA<11>  | SA<10>  | SA<0>  | IOR  | SA<3>  | SA<4>  | SA<1>  | SA<5>  | SA<9>  | SA<2>
+INPUTP | 13 | 72 | 74 | 76 | 65 | 67 | 87 | 54 | 82 | 80 | 86 | 78 | 70 | 83
+EQ | 10 | 
+   SD<3>_MLTSRCEDGE$BUF0/SD<3>_MLTSRCEDGE$BUF0_TRST = !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & SA<2> & !SA<4> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & !SA<3> & !SA<4> & SA<1> & SA<5> & SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	SA<0> & !IOR & SA<3> & SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>
+	# !SA<8> & !SA<7> & !SA<6> & !SA<11> & !SA<10> & 
+	!SA<0> & !IOR & SA<3> & !SA<2> & !SA<4> & !SA<1> & SA<5> & 
+	SA<9>;
+
+PIN | SA<8> | 64 | 0 | N/A | 72 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<7> | 64 | 0 | N/A | 74 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<6> | 64 | 0 | N/A | 76 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<11> | 64 | 0 | N/A | 65 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<10> | 64 | 0 | N/A | 67 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<0> | 64 | 0 | N/A | 87 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | IOR | 64 | 0 | N/A | 54 | 28 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<3> | 64 | 0 | N/A | 82 | 18 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 15 | 3 | 12 | 3 | 9 | 3 | 6 | 3 | 14 | 1 | 17 | 1 | 16 | 1 | 15 | 3 | 17 | 5 | 17
+PIN | SA<2> | 64 | 0 | N/A | 83 | 18 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 15 | 3 | 12 | 3 | 9 | 3 | 6 | 3 | 14 | 1 | 17 | 1 | 16 | 1 | 15 | 3 | 17 | 5 | 17
+PIN | SA<4> | 64 | 0 | N/A | 80 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<1> | 64 | 0 | N/A | 86 | 17 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 15 | 3 | 12 | 3 | 9 | 3 | 6 | 3 | 14 | 1 | 17 | 1 | 16 | 3 | 17 | 5 | 17
+PIN | SA<5> | 64 | 0 | N/A | 78 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | SA<9> | 64 | 0 | N/A | 70 | 33 | 2 | 15 | 3 | 13 | 3 | 11 | 3 | 10 | 3 | 8 | 1 | 2 | 1 | 1 | 3 | 16 | 5 | 8 | 5 | 7 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 1 | 3 | 4 | 3 | 1 | 5 | 16 | 5 | 14 | 5 | 13 | 5 | 11 | 5 | 10 | 3 | 15 | 5 | 15 | 3 | 12 | 5 | 12 | 3 | 9 | 5 | 9 | 3 | 6 | 5 | 6 | 3 | 14 | 1 | 17 | 3 | 17 | 5 | 17
+PIN | IOW | 64 | 0 | N/A | 53 | 4 | 1 | 2 | 1 | 1 | 3 | 16 | 3 | 14
+PIN | IN_SD<10> | 64 | 0 | N/A | 14 | 1 | 5 | 8
+PIN | IN_SD<11> | 64 | 0 | N/A | 12 | 1 | 5 | 7
+PIN | IN_SD<12> | 64 | 0 | N/A | 10 | 1 | 5 | 5
+PIN | IN_SD<13> | 64 | 0 | N/A | 8 | 1 | 5 | 4
+PIN | IN_SD<14> | 64 | 0 | N/A | 2 | 1 | 5 | 2
+PIN | IN_SD<15> | 64 | 0 | N/A | 134 | 1 | 5 | 1
+PIN | IO_A<4> | 64 | 0 | N/A | 46 | 1 | 3 | 1
+PIN | IO_A<5> | 64 | 0 | N/A | 42 | 1 | 5 | 16
+PIN | IO_A<6> | 64 | 0 | N/A | 41 | 1 | 5 | 14
+PIN | IO_A<7> | 64 | 0 | N/A | 38 | 1 | 5 | 13
+PIN | IN_SD<8> | 64 | 0 | N/A | 16 | 1 | 5 | 11
+PIN | IN_SD<9> | 64 | 0 | N/A | 15 | 1 | 5 | 10
+PIN | IO_B<0> | 64 | 0 | N/A | 33 | 1 | 3 | 15
+PIN | IO_A<0> | 64 | 0 | N/A | 51 | 1 | 5 | 15
+PIN | IO_B<1> | 64 | 0 | N/A | 27 | 1 | 3 | 12
+PIN | IO_A<1> | 64 | 0 | N/A | 50 | 1 | 5 | 12
+PIN | IO_B<2> | 64 | 0 | N/A | 25 | 1 | 3 | 9
+PIN | IO_A<2> | 64 | 0 | N/A | 49 | 1 | 5 | 9
+PIN | IO_B<3> | 64 | 0 | N/A | 23 | 1 | 3 | 6
+PIN | IO_A<3> | 64 | 0 | N/A | 47 | 1 | 5 | 6
+PIN | IOCS16 | 536871040 | 0 | N/A | 56
+PIN | OUT_SD<12> | 536871040 | 0 | N/A | 124
+PIN | OUT_SD<13> | 536871040 | 0 | N/A | 122
+PIN | OUT_SD<14> | 536871040 | 0 | N/A | 121
+PIN | OUT_SD<15> | 536871040 | 0 | N/A | 120
+PIN | OUT_SD_S<8> | 536871040 | 0 | N/A | 131
+PIN | OUT_SD_S<9> | 536871040 | 0 | N/A | 129
+PIN | OUT_SD_S<10> | 536871040 | 0 | N/A | 127
+PIN | SD<10> | 536871040 | 0 | N/A | 97
+PIN | SD<11> | 536871040 | 0 | N/A | 95
+PIN | SD<12> | 536871040 | 0 | N/A | 93
+PIN | SD<13> | 536871040 | 0 | N/A | 91
+PIN | SD<14> | 536871040 | 0 | N/A | 89
+PIN | SD<15> | 536871040 | 0 | N/A | 88
+PIN | SD<3> | 536871040 | 0 | N/A | 113
+PIN | SD<4> | 536871040 | 0 | N/A | 112
+PIN | SD<5> | 536871040 | 0 | N/A | 107
+PIN | SD<6> | 536871040 | 0 | N/A | 106
+PIN | SD<7> | 536871040 | 0 | N/A | 104
+PIN | SD<8> | 536871040 | 0 | N/A | 101
+PIN | SD<9> | 536871040 | 0 | N/A | 99
+PIN | OUT_SD<11> | 536871040 | 0 | N/A | 126
+PIN | SD<0> | 536870976 | 0 | N/A | 118 | 1 | 1 | 2
+PIN | SD<1> | 536870976 | 0 | N/A | 117 | 1 | 1 | 1
+PIN | SD<2> | 536870976 | 0 | N/A | 116 | 1 | 3 | 16

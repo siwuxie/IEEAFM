@@ -1,0 +1,83 @@
+PID   USER     TIME   COMMAND
+    1 root       0:01 /bin/busybox init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    4 root       0:00 [events/0]
+    5 root       0:00 [khelper]
+    6 root       0:00 [async/mgr]
+    7 root       0:00 [sync_supers]
+    8 root       0:00 [bdi-default]
+    9 root       0:00 [kblockd/0]
+   10 root       0:00 [kacpid]
+   11 root       0:00 [kacpi_notify]
+   12 root       0:00 [kacpi_hotplug]
+   13 root       0:00 [ata/0]
+   14 root       0:00 [ata_aux]
+   15 root       0:00 [ksuspend_usbd]
+   16 root       0:00 [khubd]
+   17 root       0:00 [kseriod]
+   18 root       0:00 [kswapd0]
+   19 root       0:00 [aio/0]
+   20 root       0:00 [crypto/0]
+   23 root       0:00 [scsi_eh_0]
+   24 root       0:00 [scsi_eh_1]
+   27 root       0:00 [wusbd]
+   28 root       0:00 [usbhid_resumer]
+   56 root       0:00 [kpsmoused]
+   98 root       0:00 [aufsd/0]
+   99 root       0:00 [aufsd_pre/0]
+  337 root       0:01 [loop1]
+  408 root       0:00 [loop0]
+  448 root       0:00 [loop4]
+  634 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 2527 root       0:00 -sh
+ 2528 root       0:00 /sbin/getty 38400 tty2
+ 2531 root       0:00 /sbin/getty 38400 tty3
+ 2548 root       0:00 syslogd -m 0
+ 2551 root       0:00 klogd
+ 2688 root       0:00 /usr/sbin/cupsd -C /etc/cups/cupsd.conf
+ 3549 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 3550 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 3707 root       0:00 busybox ps
+PID   USER     TIME   COMMAND
+    1 root       0:01 /bin/busybox init
+    2 root       0:00 [kthreadd]
+    3 root       0:00 [ksoftirqd/0]
+    4 root       0:00 [events/0]
+    5 root       0:00 [khelper]
+    6 root       0:00 [async/mgr]
+    7 root       0:00 [sync_supers]
+    8 root       0:00 [bdi-default]
+    9 root       0:00 [kblockd/0]
+   10 root       0:00 [kacpid]
+   11 root       0:00 [kacpi_notify]
+   12 root       0:00 [kacpi_hotplug]
+   13 root       0:00 [ata/0]
+   14 root       0:00 [ata_aux]
+   15 root       0:00 [ksuspend_usbd]
+   16 root       0:00 [khubd]
+   17 root       0:00 [kseriod]
+   18 root       0:00 [kswapd0]
+   19 root       0:00 [aio/0]
+   20 root       0:00 [crypto/0]
+   23 root       0:00 [scsi_eh_0]
+   24 root       0:00 [scsi_eh_1]
+   27 root       0:00 [wusbd]
+   28 root       0:00 [usbhid_resumer]
+   56 root       0:00 [kpsmoused]
+   98 root       0:00 [aufsd/0]
+   99 root       0:00 [aufsd_pre/0]
+  337 root       0:01 [loop1]
+  408 root       0:00 [loop0]
+  448 root       0:00 [loop4]
+  634 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 2527 root       0:00 -sh
+ 2528 root       0:00 /sbin/getty 38400 tty2
+ 2531 root       0:00 /sbin/getty 38400 tty3
+ 2548 root       0:00 syslogd -m 0
+ 2551 root       0:00 klogd
+ 2688 root       0:00 /usr/sbin/cupsd -C /etc/cups/cupsd.conf
+ 3549 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 3550 root       0:00 /sbin/udevd --daemon --resolve-names=early
+ 3708 root       0:00 [flush-8:0]
+ 3709 root       0:00 busybox ps
